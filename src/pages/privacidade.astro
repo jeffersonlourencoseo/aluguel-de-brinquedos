@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { SITE_CONFIG } from '../data/config';
 ---
 
 <Layout
@@ -67,9 +68,9 @@ import Layout from '../layouts/Layout.astro';
           <h2 class="text-2xl font-black text-secondary pt-6">6. Contato</h2>
           <p>Para exercer seus direitos ou esclarecer dúvidas sobre esta política, entre em contato conosco:</p>
           <ul class="list-disc pl-6 space-y-2">
-            <li>E-mail: contato@alugueldebrinquedos.com.br</li>
-            <li>Telefone: (11) 3333-3333</li>
-            <li>WhatsApp: (11) 99999-9999</li>
+            <li>E-mail: {SITE_CONFIG.nap.email}</li>
+            <li>Telefone: {SITE_CONFIG.nap.phoneDisplay}</li>
+            <li>WhatsApp: {SITE_CONFIG.nap.whatsappDisplay}</li>
           </ul>
 
           <p class="pt-6 text-sm text-gray-500">Última atualização: 16 de Maio de 2026.</p>
