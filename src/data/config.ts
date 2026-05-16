@@ -35,7 +35,7 @@ export const SITE_CONFIG = {
 
   // Redes Sociais
   social: {
-    whatsapp: 'https://wa.me/5521997751577',
+    whatsapp: 'https://wa.me/5521997751577?text=Ola%2C%20achei%20seu%20site%20no%20google%20e%20gostaria%20de%20saber%20mais%20informacoes!',
   },
 
   // Horario de Funcionamento (formato Schema.org)
@@ -67,6 +67,6 @@ export const SITE_CONFIG = {
   foundingDate: '2009-01-01',
 
   // Cores da marca (para Open Graph e PWA)
-  themeColor: '#1E3A8A',
+  themeColor: '#2563EB',
   backgroundColor: '#FFFFFF',
 } as const;
