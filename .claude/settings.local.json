@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(Remove-Item -Recurse -Force dist -ErrorAction SilentlyContinue)",
+      "Bash(npm list *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Jefferson\\\\Desktop\\\\SEO LOCAL\\\\ALUGUEL DE BRINQUEDO\" -Recurse)",
+      "Bash(Select-Object FullName, Length, LastWriteTime)",
+      "Bash(Sort-Object FullName)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

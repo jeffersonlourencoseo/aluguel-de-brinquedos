@@ -1,0 +1,75 @@
+---
+import { SITE_CONFIG } from '../data/config';
+
+export interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+  ogType?: string;
+  canonical?: string;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = SITE_CONFIG.description,
+  ogImage = `${SITE_CONFIG.url}/og-image.jpg`,
+  ogType = 'website',
+  canonical,
+  noindex = false,
+} = Astro.props;
+
+const fullTitle = title.includes(SITE_CONFIG.name)
+  ? title
+  : `${title} | ${SITE_CONFIG.name}`;
+
+const canonicalUrl = canonical
+  ? `${SITE_CONFIG.url}${canonical}`
+  : `${SITE_CONFIG.url}${Astro.url.pathname}`;
+---
+
+<!-- Metas Básicas -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="generator" content={Astro.generator} />
+
+<!-- SEO Core -->
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+{!noindex && <meta name="robots" content="index, follow" />}
+
+<!-- Canonical -->
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:type" content={ogType} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:site_name" content={SITE_CONFIG.name} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+<!-- Preconnect Fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Tema -->
+<meta name="theme-color" content={SITE_CONFIG.themeColor} />
+<meta name="msapplication-TileColor" content={SITE_CONFIG.themeColor} />

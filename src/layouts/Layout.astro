@@ -1,0 +1,202 @@
+---
+import SEO from '../components/SEO.astro';
+import SchemaLocalBusiness from '../components/SchemaLocalBusiness.astro';
+import WhatsAppBtn from '../components/WhatsAppBtn.astro';
+import { SITE_CONFIG } from '../data/config';
+
+export interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+  ogType?: string;
+  canonical?: string;
+  noindex?: boolean;
+}
+
+const { title, description, ogImage, ogType, canonical, noindex } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <SEO
+    title={title}
+    description={description}
+    ogImage={ogImage}
+    ogType={ogType}
+    canonical={canonical}
+    noindex={noindex}
+  />
+  <SchemaLocalBusiness />
+</head>
+<body class="font-sans text-gray-900 antialiased bg-white">
+
+  <!-- Header Sticky com Backdrop Blur -->
+  <header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <div class="container mx-auto px-6 lg:px-12">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2 hover:opacity-90 transition-opacity">
+          <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+          </div>
+          <span class="text-xl font-black text-secondary tracking-tight">ALUGUEL<span class="text-primary">BRINQUEDOS</span></span>
+        </a>
+
+        <!-- Navigation Desktop -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="/brinquedos" class="text-sm font-semibold text-gray-600 hover:text-secondary transition-all">Brinquedos</a>
+          <a href="/sobre" class="text-sm font-semibold text-gray-600 hover:text-secondary transition-all">Sobre</a>
+          <a href="/blog" class="text-sm font-semibold text-gray-600 hover:text-secondary transition-all">Blog</a>
+          <a href="/localizacao" class="text-sm font-semibold text-gray-600 hover:text-secondary transition-all">Localização</a>
+          <a href="/contato" class="inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-secondary bg-primary rounded-lg hover:bg-primary-400 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary/20 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+            Orçamento Rápido
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600 hover:text-secondary focus:outline-none" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 z-[999] bg-secondary/95 backdrop-blur-xl translate-x-full transition-transform duration-300 md:hidden" aria-hidden="true">
+      <div class="flex flex-col items-center justify-center h-full px-6 space-y-8">
+        <a href="/brinquedos" class="text-2xl font-black text-white hover:text-primary transition-all hover:scale-105">Brinquedos</a>
+        <a href="/sobre" class="text-2xl font-black text-white hover:text-primary transition-all hover:scale-105">Sobre</a>
+        <a href="/blog" class="text-2xl font-black text-white hover:text-primary transition-all hover:scale-105">Blog</a>
+        <a href="/localizacao" class="text-2xl font-black text-white hover:text-primary transition-all hover:scale-105">Localização</a>
+        <a href="/contato" class="text-2xl font-black text-white hover:text-primary transition-all hover:scale-105">Contato</a>
+        <a href={SITE_CONFIG.social.whatsapp} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-secondary bg-primary rounded-xl hover:bg-primary-400 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-primary/30 mt-4">
+          <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-accent text-white">
+    <div class="container mx-auto px-6 lg:px-12 pt-24 pb-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <h3 class="text-xl font-black mb-4 text-white">{SITE_CONFIG.name}</h3>
+          <p class="text-gray-300 leading-relaxed">{SITE_CONFIG.tagline}. Aluguel de brinquedos infláveis com segurança, qualidade e preço justo.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-4 text-white">Navegação</h4>
+          <ul class="space-y-3 text-gray-300">
+            <li><a href="/" class="hover:text-primary transition-all">Home</a></li>
+            <li><a href="/brinquedos" class="hover:text-primary transition-all">Brinquedos</a></li>
+            <li><a href="/sobre" class="hover:text-primary transition-all">Sobre Nós</a></li>
+            <li><a href="/blog" class="hover:text-primary transition-all">Blog</a></li>
+            <li><a href="/localizacao" class="hover:text-primary transition-all">Localização</a></li>
+            <li><a href="/contato" class="hover:text-primary transition-all">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-4 text-white">Contato</h4>
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+              {SITE_CONFIG.nap.whatsappDisplay}
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+              {SITE_CONFIG.nap.email}
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+              Atendemos toda a região metropolitana
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-4 text-white">Horário de Atendimento</h4>
+          <ul class="space-y-3 text-gray-300">
+            <li>Segunda a Sexta: 8h às 20h</li>
+            <li>Sábado: 9h às 18h</li>
+            <li>Domingo: 10h às 16h</li>
+            <li class="pt-2"><a href={SITE_CONFIG.social.whatsapp} target="_blank" rel="noopener noreferrer" class="text-primary font-semibold hover:underline">Atendimento de emergência via WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-gray-400">&copy; {new Date().getFullYear()} {SITE_CONFIG.name}. Todos os direitos reservados.</p>
+        <div class="flex items-center gap-6 text-sm text-gray-400">
+          <a href="/privacidade" class="hover:text-primary transition-all">Política de Privacidade</a>
+          <a href="/termos" class="hover:text-primary transition-all">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <WhatsAppBtn />
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIconOpen = document.getElementById('menu-icon-open');
+    const menuIconClose = document.getElementById('menu-icon-close');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isOpen = !mobileMenu.classList.contains('translate-x-full');
+        if (isOpen) {
+          mobileMenu.classList.add('translate-x-full');
+          mobileMenu.setAttribute('aria-hidden', 'true');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+          if (menuIconOpen) menuIconOpen.classList.remove('hidden');
+          if (menuIconClose) menuIconClose.classList.add('hidden');
+        } else {
+          mobileMenu.classList.remove('translate-x-full');
+          mobileMenu.setAttribute('aria-hidden', 'false');
+          mobileMenuBtn.setAttribute('aria-expanded', 'true');
+          document.body.style.overflow = 'hidden';
+          if (menuIconOpen) menuIconOpen.classList.add('hidden');
+          if (menuIconClose) menuIconClose.classList.remove('hidden');
+        }
+      });
+
+      // Close menu on link click
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('translate-x-full');
+          mobileMenu.setAttribute('aria-hidden', 'true');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+          if (menuIconOpen) menuIconOpen.classList.remove('hidden');
+          if (menuIconClose) menuIconClose.classList.add('hidden');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Fundamentos de Respiro para todas as seções principais */
+  section {
+    @apply py-24 lg:py-32;
+  }
+</style>

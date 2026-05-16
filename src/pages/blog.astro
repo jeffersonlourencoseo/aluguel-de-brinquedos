@@ -1,0 +1,124 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const posts = [
+  {
+    title: "Como Escolher o Brinquedo Ideal para a Idade da Criança",
+    excerpt: "Descubra qual brinquedo inflável é mais adequado para cada faixa etária e como garantir diversão com segurança.",
+    date: "15 de Maio de 2026",
+    category: "Dicas",
+    readTime: "5 min",
+    slug: "como-escolher-brinquedo"
+  },
+  {
+    title: "5 Dicas para Organizar uma Festa Infantil Inesquecível",
+    excerpt: "Planejamento, decoração, brinquedos e buffet: tudo o que você precisa saber para uma festa perfeita.",
+    date: "10 de Maio de 2026",
+    category: "Festas",
+    readTime: "7 min",
+    slug: "dicas-festa-infantil"
+  },
+  {
+    title: "Segurança nos Brinquedos Infláveis: O que Verificar",
+    excerpt: "Saiba quais cuidados são essenciais na hora de alugar brinquedos infláveis para garantir a segurança das crianças.",
+    date: "05 de Maio de 2026",
+    category: "Segurança",
+    readTime: "4 min",
+    slug: "seguranca-brinquedos"
+  },
+  {
+    title: "Tendências de Brinquedos para Festas em 2026",
+    excerpt: "Conheça os brinquedos mais procurados deste ano e as novidades que estão bombando nas festas infantis.",
+    date: "01 de Maio de 2026",
+    category: "Tendências",
+    readTime: "6 min",
+    slug: "tendencias-2026"
+  },
+  {
+    title: "Como Economizar no Aluguel de Brinquedos sem Perder Qualidade",
+    excerpt: "Dicas práticas para montar um pacote de brinquedos completo gastando menos e sem abrir mão da diversão.",
+    date: "25 de Abril de 2026",
+    category: "Economia",
+    readTime: "5 min",
+    slug: "economizar-aluguel"
+  },
+  {
+    title: "Benefícios do Pula-Pula para o Desenvolvimento Infantil",
+    excerpt: "Além da diversão, o pula-pula contribui para o desenvolvimento motor, coordenação e equilíbrio das crianças.",
+    date: "20 de Abril de 2026",
+    category: "Desenvolvimento",
+    readTime: "4 min",
+    slug: "beneficios-pula-pula"
+  }
+];
+---
+
+<Layout
+  title="Blog | Dicas e Novidades sobre Aluguel de Brinquedos"
+  description="Confira dicas, tendências e novidades sobre aluguel de brinquedos para festas infantis. Aprenda a escolher os melhores brinquedos e organizar eventos inesquecíveis."
+>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-br from-secondary-50 to-white">
+    <div class="container mx-auto px-6 lg:px-12">
+      <div class="max-w-4xl">
+        <span class="inline-block text-sm font-bold text-secondary uppercase tracking-wider mb-4">Blog</span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-secondary leading-tight mb-16">
+          Dicas, Tendências e Novidades do Mundo das Festas Infantis
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl">
+          Conteúdo exclusivo para ajudar você a organizar festas inesquecíveis e escolher os melhores brinquedos para cada ocasião.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LISTAGEM -->
+  <section class="bg-white">
+    <div class="container mx-auto px-6 lg:px-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {posts.map((post) => (
+          <article class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-primary/10 hover:scale-105 active:scale-95 transition-all group cursor-default">
+            <div class="h-48 bg-gradient-to-br from-primary-200 to-primary-400 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <span class="text-5xl">🎉</span>
+            </div>
+            <div class="p-10">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="inline-block px-3 py-1 text-xs font-bold text-secondary bg-primary/20 rounded-full">{post.category}</span>
+                <span class="text-sm text-gray-500">{post.readTime}</span>
+              </div>
+              <h2 class="text-xl font-black text-secondary mb-3 group-hover:text-primary transition-colors">{post.title}</h2>
+              <p class="text-gray-600 leading-relaxed mb-6">{post.excerpt}</p>
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-gray-500">{post.date}</span>
+                <a href={`/blog/${post.slug}`} class="text-sm font-bold text-secondary hover:text-primary transition-colors flex items-center gap-1">
+                  Ler mais
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="bg-secondary">
+    <div class="container mx-auto px-6 lg:px-12">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-black text-white mb-6">Quer Receber Novidades?</h2>
+        <p class="text-lg text-secondary-100 mb-10 max-w-2xl mx-auto">
+          Cadastre-se para receber dicas exclusivas, promoções e novidades sobre aluguel de brinquedos diretamente no seu e-mail.
+        </p>
+        <form class="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
+          <input type="email" placeholder="seu@email.com" class="flex-1 px-6 py-4 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary" />
+          <button type="submit" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-secondary bg-primary rounded-xl hover:bg-primary-400 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary/20">
+            Cadastrar
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</Layout>
