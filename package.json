@@ -9,6 +9,9 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@astrojs/sitemap": "^3.0.5",
     "@astrojs/tailwind": "^5.0.0",
