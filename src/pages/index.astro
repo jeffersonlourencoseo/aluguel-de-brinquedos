@@ -167,7 +167,7 @@ const brinquedos = await getCollection('brinquedos');
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-        {brinquedos.map((b) => (
+        {brinquedos.slice(0, 6).map((b) => (
           <div class="bg-white border border-bege-dark rounded-[10px] p-6 hover:shadow-md hover:border-orange-light transition cursor-default">
             <div class="text-5xl mb-4">{b.data.icon}</div>
             <h3 class="text-sm font-bold text-orange-dark mb-2">{b.data.title}</h3>
