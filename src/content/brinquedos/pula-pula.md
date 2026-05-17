@@ -1,7 +1,6 @@
 ---
 title: "Pula-Pula Inflável"
 description: "Castelos infláveis coloridos com segurança reforçada para horas de diversão sem parar."
-price: "R$ 150 / dia"
 icon: "🏰"
 popular: true
 minAge: "3 anos"

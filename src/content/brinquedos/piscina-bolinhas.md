@@ -1,7 +1,6 @@
 ---
 title: "Piscina de Bolinhas"
 description: "Piscinas cheias de bolinhas coloridas, perfeitas para crianças pequenas se divertirem com segurança."
-price: "R$ 120 / dia"
 icon: "🔴"
 popular: false
 minAge: "1 ano"

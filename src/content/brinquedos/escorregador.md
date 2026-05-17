@@ -1,7 +1,6 @@
 ---
 title: "Escorregador Gigante"
 description: "Escorregadores infláveis de grande porte com adrenalina garantida para todas as idades."
-price: "R$ 200 / dia"
 icon: "🛝"
 popular: false
 minAge: "5 anos"

@@ -7,6 +7,53 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif']
       },
       colors: {
+        orange: {
+          DEFAULT: '#E8622A',
+          light: '#F4895F',
+          dark: '#C04E1A',
+          50: '#FDF0EB',
+          100: '#FADBCF',
+          200: '#F6C7B3',
+          300: '#F0A88A',
+          400: '#F4895F',
+          500: '#E8622A',
+          600: '#C04E1A',
+          700: '#9E3E14',
+          800: '#7A3110',
+          900: '#5C250C'
+        },
+        bege: {
+          DEFAULT: '#FDF6EE',
+          mid: '#F5E6D3',
+          dark: '#E8D5BC',
+          50: '#FFFBF7',
+          100: '#FDF6EE',
+          200: '#F5E6D3',
+          300: '#E8D5BC',
+          400: '#D9BFA0',
+          500: '#C4A582',
+          600: '#A98B6A',
+          700: '#8B7157',
+          800: '#6D5844',
+          900: '#503E30'
+        },
+        brown: {
+          DEFAULT: '#5C3317',
+          mid: '#8B5A2B',
+          light: '#A67B5B',
+          50: '#F5EDE6',
+          100: '#E6D5C5',
+          200: '#D4B9A0',
+          300: '#C09C7A',
+          400: '#A67B5B',
+          500: '#8B5A2B',
+          600: '#6D4520',
+          700: '#5C3317',
+          800: '#4A2812',
+          900: '#361E0D'
+        },
+        'text-main': '#2C1810',
+        'text-muted': '#7A5C44',
         primary: {
           DEFAULT: '#FFD600',
           50: '#FFFBEB',
@@ -32,19 +79,6 @@ export default {
           700: '#1D4ED8',
           800: '#1E40AF',
           900: '#1E3A8A'
-        },
-        accent: {
-          DEFAULT: '#F43F5E',
-          50: '#FFF1F2',
-          100: '#FFE4E6',
-          200: '#FECDD3',
-          300: '#FDA4AF',
-          400: '#FB7185',
-          500: '#F43F5E',
-          600: '#E11D48',
-          700: '#BE123C',
-          800: '#9F1239',
-          900: '#881337'
         }
       }
     }

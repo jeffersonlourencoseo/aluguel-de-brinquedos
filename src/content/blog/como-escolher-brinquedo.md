@@ -4,6 +4,7 @@ description: "Descubra qual brinquedo inflável é mais adequado para cada faixa
 date: "2026-05-15"
 category: "Dicas"
 readTime: "5 min"
+image: "../../assets/blog/pexels-photo-27175432.jpeg"
 ---
 
 # Como Escolher o Brinquedo Ideal para a Idade da Criança

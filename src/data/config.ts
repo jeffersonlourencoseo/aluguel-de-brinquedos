@@ -67,6 +67,6 @@ export const SITE_CONFIG = {
   foundingDate: '2009-01-01',
 
   // Cores da marca (para Open Graph e PWA)
-  themeColor: '#2563EB',
+  themeColor: '#E8622A',
   backgroundColor: '#FFFFFF',
 } as const;

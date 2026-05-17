@@ -4,6 +4,7 @@ description: "Saiba quais cuidados são essenciais na hora de alugar brinquedos 
 date: "2026-05-05"
 category: "Segurança"
 readTime: "4 min"
+image: "../../assets/blog/pexels-photo-28487966.jpeg"
 ---
 
 # Segurança nos Brinquedos Infláveis: O que Verificar

@@ -8,7 +8,6 @@ export default defineConfig({
   output: 'server',
   adapter: vercel(),
   site: SITE_CONFIG.url,
-  outDir: './.vercel/output',
   integrations: [
     tailwind(),
   ],

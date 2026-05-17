@@ -8,7 +8,8 @@ const blogCollection = defineCollection({
     date: z.string(),
     category: z.string(),
     readTime: z.string(),
-    image: z.string().optional()
+    image: z.string().optional(),
+    cover: z.string().optional()
   })
 });
 
@@ -17,7 +18,7 @@ const brinquedosCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    price: z.string(),
+    price: z.string().optional(),
     icon: z.string(),
     popular: z.boolean().default(false),
     minAge: z.string().optional(),
