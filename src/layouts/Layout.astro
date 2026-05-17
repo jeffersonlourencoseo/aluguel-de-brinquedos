@@ -75,7 +75,7 @@ const currentPath = Astro.url.pathname;
   </header>
 
   <!-- Mobile Menu Drawer -->
-  <div id="mobile-menu" class="fixed inset-0 z-[9998] md:hidden pointer-events-none" aria-hidden="true">
+  <div id="mobile-menu" class="fixed inset-0 z-[9998] md:hidden pointer-events-none" aria-hidden="true" inert>
     <div id="mobile-menu-backdrop" class="absolute inset-0 bg-black/70 backdrop-blur-sm transition-opacity duration-300 opacity-0"></div>
     <div id="mobile-menu-panel" class="absolute top-0 right-0 h-full w-[85vw] max-w-[320px] bg-brown shadow-2xl translate-x-full transition-transform duration-300 ease-out pointer-events-auto">
       <div class="flex flex-col h-full px-5 py-16 space-y-1 overflow-y-auto">
@@ -104,11 +104,11 @@ const currentPath = Astro.url.pathname;
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
         <div>
           <h3 class="text-lg sm:text-xl font-black mb-4 text-white">{SITE_CONFIG.name}</h3>
-          <p class="text-white/65 leading-relaxed text-sm sm:text-base">{SITE_CONFIG.tagline}. Aluguel de brinquedos inflaveis com seguranca, qualidade e preco justo.</p>
+          <p class="text-white/90 leading-relaxed text-sm sm:text-base">{SITE_CONFIG.tagline}. Aluguel de brinquedos inflaveis com seguranca, qualidade e preco justo.</p>
         </div>
         <div>
           <h4 class="text-base sm:text-lg font-bold mb-4 text-white">Navegacao</h4>
-          <ul class="space-y-2 sm:space-y-3 text-white/65 text-sm sm:text-base">
+          <ul class="space-y-2 sm:space-y-3 text-white/90 text-sm sm:text-base">
             <li><a href="/" class="hover:text-white transition-all">Início</a></li>
             <li><a href="/sobre" class="hover:text-white transition-all">Quem Somos</a></li>
             <li><a href="/brinquedos" class="hover:text-white transition-all">Brinquedos</a></li>
@@ -119,7 +119,7 @@ const currentPath = Astro.url.pathname;
         <div class="lg:col-span-2">
           <h4 class="text-base sm:text-lg font-bold mb-4 text-white">Contato e Atendimento</h4>
           <div class="grid sm:grid-cols-2 gap-6">
-            <ul class="space-y-2 sm:space-y-3 text-white/65 text-sm sm:text-base">
+            <ul class="space-y-2 sm:space-y-3 text-white/90 text-sm sm:text-base">
               <li class="flex items-center gap-2">
                 <svg class="w-5 h-5 text-orange-light shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
                 <span>{SITE_CONFIG.nap.whatsappDisplay}</span>
@@ -133,7 +133,7 @@ const currentPath = Astro.url.pathname;
                 <span>{SITE_CONFIG.nap.address.street}, {SITE_CONFIG.nap.address.number} — {SITE_CONFIG.nap.address.neighborhood}, {SITE_CONFIG.nap.address.city} — {SITE_CONFIG.nap.address.state}</span>
               </li>
             </ul>
-            <ul class="space-y-2 sm:space-y-3 text-white/65 text-sm sm:text-base">
+            <ul class="space-y-2 sm:space-y-3 text-white/90 text-sm sm:text-base">
               <li>Segunda a Sexta: 8h as 20h</li>
               <li>Sabado: 9h as 18h</li>
               <li>Domingo: 10h as 16h</li>
@@ -143,8 +143,8 @@ const currentPath = Astro.url.pathname;
         </div>
       </div>
       <div class="border-t border-white/15 mt-10 sm:mt-16 pt-6 sm:pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-white/50 text-sm sm:text-base">&copy; {new Date().getFullYear()} {SITE_CONFIG.name}. Todos os direitos reservados.</p>
-        <div class="flex items-center gap-4 sm:gap-6 text-sm text-white/50">
+        <p class="text-white/80 text-sm sm:text-base">&copy; {new Date().getFullYear()} {SITE_CONFIG.name}. Todos os direitos reservados.</p>
+        <div class="flex items-center gap-4 sm:gap-6 text-sm text-white/80">
           <a href="/privacidade" class="hover:text-white transition-all">Politica de Privacidade</a>
           <a href="/termos" class="hover:text-white transition-all">Termos de Uso</a>
         </div>
@@ -169,6 +169,7 @@ const currentPath = Astro.url.pathname;
       function openMenu() {
         menu.classList.remove('pointer-events-none');
         menu.classList.add('pointer-events-auto');
+        menu.removeAttribute('inert');
         panel.classList.remove('translate-x-full');
         if (backdrop) {
           backdrop.classList.remove('opacity-0');
@@ -188,6 +189,7 @@ const currentPath = Astro.url.pathname;
           backdrop.classList.remove('opacity-100');
         }
         menu.setAttribute('aria-hidden', 'true');
+        menu.setAttribute('inert', '');
         btn.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';
         if (iconOpen) iconOpen.classList.remove('hidden');

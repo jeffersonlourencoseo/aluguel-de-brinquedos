@@ -15,7 +15,13 @@
       "Bash(Start-Sleep -Seconds 3)",
       "Bash(Get-Content C:\\\\Users\\\\JEFFER~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Jefferson-Desktop-SEO-LOCAL-ALUGUEL-DE-BRINQUEDO\\\\1317a39b-80bb-4384-a2be-98fe8b39bc3a\\\\tasks\\\\b6jdnnebz.output)",
       "Bash(Select-Object -Last 10)",
-      "Bash(git reset *)"
+      "Bash(git reset *)",
+      "Bash(cat C:\\\\\\\\Users\\\\\\\\JEFFER~1\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\C--Users-Jefferson-Desktop-SEO-LOCAL-ALUGUEL-DE-BRINQUEDO\\\\\\\\a5166f98-5a9d-48ad-9d8d-d1f88c63ed88\\\\\\\\tasks\\\\\\\\bp9hqaepn.output)",
+      "Bash(git stash *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "WebFetch(domain:aluguel-de-brinquedos-six.vercel.app)"
     ]
   }
 }
