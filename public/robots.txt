@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.alugueldebrinquedos.com.br/sitemap.xml
+Sitemap: https://www.alugueldebrinquedos.com.br/sitemap-index.xml
