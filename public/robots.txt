@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.alugueldebrinquedos.com.br/sitemap-index.xml
+Sitemap: https://aluguel-de-brinquedos-six.vercel.app/sitemap-index.xml

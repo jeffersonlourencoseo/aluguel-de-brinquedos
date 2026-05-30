@@ -12,7 +12,7 @@ export const SITE_CONFIG = {
     'Aluguel de brinquedos para festas infantis e eventos em toda a regiao metropolitana. Pula-pula, escorregadores, piscinas de bolinhas, cama elastica e muito mais. Orcamento sem compromisso!',
 
   // Dominio
-  url: 'https://www.alugueldebrinquedos.com.br',
+  url: 'https://aluguel-de-brinquedos-six.vercel.app',
 
   // NAP (Name, Address, Phone) - SEO Local
   nap: {
