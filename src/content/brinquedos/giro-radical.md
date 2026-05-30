@@ -1,6 +1,6 @@
 ---
 title: "Giro Radical"
-description: "Brinquedo inflável de giro e rotação para quem busca emoção e diversão radical."
+description: "Brinquedo inflável de giro e rotação para quem busca emoção e diversão radical no Rio de Janeiro."
 icon: "🌀"
 popular: false
 minAge: "6 anos"

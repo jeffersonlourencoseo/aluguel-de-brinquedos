@@ -1,6 +1,6 @@
 ---
 title: "Piscina de Bolinhas (Não Inflável)"
-description: "Piscina de bolinhas estruturada em material rígido, mais resistente e durável para uso intenso."
+description: "Piscina de bolinhas estruturada em material rígido, mais resistente e durável para uso intenso no Rio de Janeiro."
 icon: "🔴"
 popular: false
 minAge: "1 ano"

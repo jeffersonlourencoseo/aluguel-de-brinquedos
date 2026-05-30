@@ -1,6 +1,6 @@
 ---
 title: "Tobogã Pequeno / Mini Tobogã"
-description: "Mini tobogã inflável perfeito para os pequenos, com altura segura e muita diversão."
+description: "Mini tobogã inflável perfeito para os pequenos, com altura segura e muita diversão no Rio de Janeiro."
 icon: "🛝"
 popular: false
 minAge: "2 anos"

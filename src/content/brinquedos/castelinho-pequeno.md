@@ -1,6 +1,6 @@
 ---
 title: "Castelinho Pula Pula Pequeno"
-description: "Castelinho inflável pequeno e seguro, ideal para festas com bebês e crianças pequenas."
+description: "Castelinho inflável pequeno e seguro, ideal para festas com bebês e crianças pequenas no Rio de Janeiro."
 icon: "🏰"
 popular: false
 minAge: "2 anos"

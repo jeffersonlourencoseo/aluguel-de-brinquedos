@@ -1,6 +1,6 @@
 ---
 title: "Tobogã com Piscina de Bolinhas"
-description: "Tobogã inflável que desemboca em uma piscina de bolinhas, diversão 2 em 1 garantida."
+description: "Tobogã inflável que desemboca em uma piscina de bolinhas, diversão 2 em 1 garantida no Rio de Janeiro."
 icon: "🌊"
 popular: true
 minAge: "3 anos"

@@ -1,6 +1,6 @@
 ---
 title: "Tobogã Aquático (Toboágua)"
-description: "Tobogã inflável com água para refrescar no calor e deixar a festa ainda mais animada."
+description: "Tobogã inflável com água para refrescar no calor e deixar a festa ainda mais animada no Rio de Janeiro."
 icon: "💦"
 popular: false
 minAge: "5 anos"

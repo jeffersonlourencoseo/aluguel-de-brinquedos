@@ -1,6 +1,6 @@
 ---
 title: "Futebol de Sabão Super / Grande"
-description: "Campo inflável de futebol de sabão em tamanho grande, perfeito para eventos e festas com muitos participantes."
+description: "Campo inflável de futebol de sabão em tamanho grande, perfeito para eventos e festas com muitos participantes no Rio de Janeiro."
 icon: "⚽"
 popular: false
 minAge: "8 anos"

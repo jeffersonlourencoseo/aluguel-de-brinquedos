@@ -1,6 +1,6 @@
 ---
 title: "Piscina de Bolinhas (Inflável)"
-description: "Piscina de bolinhas inflável portátil, fácil de montar e ideal para qualquer espaço."
+description: "Piscina de bolinhas inflável portátil, fácil de montar e ideal para qualquer espaço no Rio de Janeiro."
 icon: "🔴"
 popular: false
 minAge: "1 ano"

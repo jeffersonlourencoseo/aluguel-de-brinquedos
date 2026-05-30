@@ -1,6 +1,6 @@
 ---
 title: "Segurança nos Brinquedos Infláveis: O que Verificar"
-description: "Saiba quais cuidados são essenciais na hora de alugar brinquedos infláveis para garantir a segurança das crianças. Guia completo com dados do INMETRO e dicas de especialistas."
+description: "Saiba quais cuidados são essenciais na hora de alugar brinquedos infláveis no Rio de Janeiro para garantir a segurança das crianças. Guia completo com dados do INMETRO e dicas de especialistas RJ."
 date: "2026-05-05"
 category: "Segurança"
 readTime: "4 min"

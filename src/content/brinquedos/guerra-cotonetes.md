@@ -1,6 +1,6 @@
 ---
 title: "Guerra de Cotonetes"
-description: "Arena inflável para guerra de cotonetes gigantes, diversão e competição garantidas."
+description: "Arena inflável para guerra de cotonetes gigantes, diversão e competição garantidas no Rio de Janeiro."
 icon: "🥊"
 popular: false
 minAge: "6 anos"

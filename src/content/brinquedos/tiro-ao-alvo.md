@@ -1,6 +1,6 @@
 ---
 title: "Tiro ao Alvo / Nerf Inflável"
-description: "Arena inflável para tiros ao alvo com dardos macios, competição segura e divertida."
+description: "Arena inflável para tiros ao alvo com dardos macios, competição segura e divertida no Rio de Janeiro."
 icon: "🎯"
 popular: false
 minAge: "6 anos"

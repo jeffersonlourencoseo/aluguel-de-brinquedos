@@ -1,6 +1,6 @@
 ---
 title: "Piscinão de Bolinhas (Grande)"
-description: "Piscina de bolinhas extra grande para diversão em grande escala, cabe muitas crianças ao mesmo tempo."
+description: "Piscina de bolinhas extra grande para diversão em grande escala, cabe muitas crianças ao mesmo tempo no Rio de Janeiro."
 icon: "🔴"
 popular: true
 minAge: "1 ano"

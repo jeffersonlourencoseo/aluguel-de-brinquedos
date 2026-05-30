@@ -1,6 +1,6 @@
 ---
 title: "Castelo Pula Pula Inflável"
-description: "Castelo inflável colorido com design de castelo medieval para horas de diversão sem parar."
+description: "Castelo inflável colorido com design de castelo medieval para horas de diversão sem parar no Rio de Janeiro."
 icon: "🏰"
 popular: true
 minAge: "3 anos"

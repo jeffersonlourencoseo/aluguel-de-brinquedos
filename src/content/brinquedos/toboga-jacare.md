@@ -1,6 +1,6 @@
 ---
 title: "Tobogã Jacaré"
-description: "Tobogã inflável temático de jacaré, diversão com muita imaginação para a criançada."
+description: "Tobogã inflável temático de jacaré, diversão com muita imaginação para a criançada no Rio de Janeiro."
 icon: "🐊"
 popular: false
 minAge: "3 anos"

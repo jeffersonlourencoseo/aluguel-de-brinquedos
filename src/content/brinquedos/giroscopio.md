@@ -1,6 +1,6 @@
 ---
 title: "Giroscópio (Simulador NASA)"
-description: "Giroscópio humano que simula a rotação de astronautas, uma experiência única de diversão."
+description: "Giroscópio humano que simula a rotação de astronautas, uma experiência única de diversão no Rio de Janeiro."
 icon: "🚀"
 popular: false
 minAge: "8 anos"

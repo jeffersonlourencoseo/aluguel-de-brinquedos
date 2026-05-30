@@ -1,6 +1,6 @@
 ---
 title: "Sinuca"
-description: "Mesa de sinuca profissional com tacos, bolas completo e montagem inclusa."
+description: "Mesa de sinuca profissional com tacos, bolas completo e montagem inclusa no Rio de Janeiro."
 icon: "🎱"
 popular: false
 minAge: "8 anos"

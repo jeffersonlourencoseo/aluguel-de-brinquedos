@@ -1,6 +1,6 @@
 ---
 title: "Multi Atividades Jacaré"
-description: "Centro de atividades inflável com tema de jacaré, várias brincadeiras em uma estrutura só."
+description: "Centro de atividades inflável com tema de jacaré, várias brincadeiras em uma estrutura só no Rio de Janeiro."
 icon: "🐊"
 popular: false
 minAge: "3 anos"

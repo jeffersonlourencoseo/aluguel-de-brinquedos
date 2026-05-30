@@ -1,6 +1,6 @@
 ---
 title: "Espaço Baby"
-description: "Área segura e divertida para bebês, com tapetes, brinquedos educativos e proteção total."
+description: "Área segura e divertida para bebês, com tapetes, brinquedos educativos e proteção total no Rio de Janeiro."
 icon: "👶"
 popular: false
 minAge: "0 meses"

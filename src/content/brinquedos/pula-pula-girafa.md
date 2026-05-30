@@ -1,6 +1,6 @@
 ---
 title: "Pula Pula Girafa"
-description: "Pula-pula inflável temático de girafa, diversão colorida e segura para a criançada."
+description: "Pula-pula inflável temático de girafa, diversão colorida e segura para a criançada no Rio de Janeiro."
 icon: "🦒"
 popular: false
 minAge: "2 anos"

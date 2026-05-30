@@ -1,6 +1,6 @@
 ---
 title: "Fliperama"
-description: "Máquinas de fliperama clássicas e modernas para diversão retrô e competitiva em qualquer evento."
+description: "Máquinas de fliperama clássicas e modernas para diversão retrô e competitiva em qualquer evento no Rio de Janeiro."
 icon: "🕹️"
 popular: false
 minAge: "5 anos"

@@ -1,6 +1,6 @@
 ---
 title: "Piscina Baby"
-description: "Piscina de bolinhas pequena e segura para bebês e crianças pequenas se divertirem."
+description: "Piscina de bolinhas pequena e segura para bebês e crianças pequenas se divertirem no Rio de Janeiro."
 icon: "🔵"
 popular: false
 minAge: "6 meses"

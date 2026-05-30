@@ -1,6 +1,6 @@
 ---
 title: "Trenzinho"
-description: "Trenzinho elétrico para passeio das crianças, uma atração encantadora para festas."
+description: "Trenzinho elétrico para passeio das crianças, uma atração encantadora para festas no Rio de Janeiro."
 icon: "🚂"
 popular: true
 minAge: "1 ano"

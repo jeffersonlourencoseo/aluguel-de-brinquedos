@@ -1,6 +1,6 @@
 ---
 title: "Playground Temático 3x1"
-description: "Playground inflável 3 em 1 com pula-pula, escorregador e obstáculos no mesmo brinquedo."
+description: "Playground inflável 3 em 1 com pula-pula, escorregador e obstáculos no mesmo brinquedo no Rio de Janeiro."
 icon: "🏰"
 popular: true
 minAge: "3 anos"

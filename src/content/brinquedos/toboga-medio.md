@@ -1,6 +1,6 @@
 ---
 title: "Tobogã Inflável Médio"
-description: "Tobogã inflável de tamanho médio, perfeito para festas em espaços moderados com muita diversão."
+description: "Tobogã inflável de tamanho médio, perfeito para festas em espaços moderados com muita diversão no Rio de Janeiro."
 icon: "🌊"
 popular: false
 minAge: "4 anos"

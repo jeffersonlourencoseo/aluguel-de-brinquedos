@@ -1,6 +1,6 @@
 ---
 title: "Ping Pong (Tênis de Mesa)"
-description: "Mesa de ping pong profissional com rede, bolas e raquetes, diversão garantida."
+description: "Mesa de ping pong profissional com rede, bolas e raquetes, diversão garantida no Rio de Janeiro."
 icon: "🏓"
 popular: false
 minAge: "6 anos"

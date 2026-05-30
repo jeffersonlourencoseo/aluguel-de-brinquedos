@@ -1,6 +1,6 @@
 ---
 title: "Touro Mecânico Temático"
-description: "Touro mecânico com temas variados para combinar com a festa, diversão personalizada."
+description: "Touro mecânico com temas variados para combinar com a festa, diversão personalizada no Rio de Janeiro."
 icon: "🐂"
 popular: false
 minAge: "8 anos"

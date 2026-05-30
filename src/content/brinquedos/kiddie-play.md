@@ -1,6 +1,6 @@
 ---
 title: "Kiddie Play"
-description: "Estrutura de atividades para crianças pequenas, com escorregador, túneis e área de brincar."
+description: "Estrutura de atividades para crianças pequenas, com escorregador, túneis e área de brincar no Rio de Janeiro."
 icon: "🎠"
 popular: false
 minAge: "2 anos"

@@ -1,6 +1,6 @@
 ---
 title: "Escalada Inflável / Parede de Escalada"
-description: "Parede de escalada inflável com diversos níveis de dificuldade para todas as idades."
+description: "Parede de escalada inflável com diversos níveis de dificuldade para todas as idades no Rio de Janeiro."
 icon: "🧗"
 popular: false
 minAge: "5 anos"

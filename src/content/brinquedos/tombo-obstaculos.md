@@ -1,6 +1,6 @@
 ---
 title: "Tombo Legal com Obstáculos"
-description: "Versão ampliada do Tombo Legal com obstáculos adicionais para mais desafio e diversão."
+description: "Versão ampliada do Tombo Legal com obstáculos adicionais para mais desafio e diversão no Rio de Janeiro."
 icon: "🤸"
 popular: false
 minAge: "6 anos"

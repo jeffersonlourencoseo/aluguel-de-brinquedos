@@ -1,6 +1,6 @@
 ---
 title: "Tobogã Escorrega Radical"
-description: "Tobogã inflável com inclinação radical para adrenalina máxima nas festas."
+description: "Tobogã inflável com inclinação radical para adrenalina máxima nas festas no Rio de Janeiro."
 icon: "🎢"
 popular: false
 minAge: "6 anos"

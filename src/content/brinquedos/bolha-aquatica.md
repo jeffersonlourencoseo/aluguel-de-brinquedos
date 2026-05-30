@@ -1,6 +1,6 @@
 ---
 title: "Bolha Aquática (Waterball)"
-description: "Esferas infláveis transparentes para caminhar sobre a água, diversão única e refrescante."
+description: "Esferas infláveis transparentes para caminhar sobre a água, diversão única e refrescante no Rio de Janeiro."
 icon: "🔮"
 popular: false
 minAge: "5 anos"

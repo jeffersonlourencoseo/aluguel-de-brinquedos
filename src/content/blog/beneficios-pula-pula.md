@@ -1,6 +1,6 @@
 ---
 title: "Benefícios do Pula-Pula para o Desenvolvimento Infantil"
-description: "Além da diversão, o pula-pula contribui para o desenvolvimento motor, coordenação e equilíbrio das crianças. Saiba os 5 benefícios comprovados pela ciência."
+description: "Além da diversão, o pula-pula contribui para o desenvolvimento motor, coordenação e equilíbrio das crianças no Rio de Janeiro. Saiba os 5 benefícios comprovados pela ciência do aluguel de brinquedos infláveis RJ."
 date: "2026-04-20"
 category: "Desenvolvimento"
 readTime: "4 min"

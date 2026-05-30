@@ -1,6 +1,6 @@
 ---
 title: "Castelo 3 em 1"
-description: "Castelo inflável multifuncional com pula-pula, escorregador e piscina de bolinhas em uma só estrutura."
+description: "Castelo inflável multifuncional com pula-pula, escorregador e piscina de bolinhas em uma só estrutura no Rio de Janeiro."
 icon: "🏰"
 popular: true
 minAge: "3 anos"

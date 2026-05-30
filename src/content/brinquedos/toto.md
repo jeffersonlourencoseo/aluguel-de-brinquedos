@@ -1,6 +1,6 @@
 ---
 title: "Totó (Pebolim)"
-description: "Mesa de totó profissional para campeonatos e diversão em grupo, pebolim de qualidade."
+description: "Mesa de totó profissional para campeonatos e diversão em grupo, pebolim de qualidade no Rio de Janeiro."
 icon: "⚽"
 popular: false
 minAge: "5 anos"

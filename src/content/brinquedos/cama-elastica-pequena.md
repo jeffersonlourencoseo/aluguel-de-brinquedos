@@ -1,6 +1,6 @@
 ---
 title: "Cama Elástica Pequena (2m)"
-description: "Cama elástica profissional de 2 metros, ideal para espaços menores e crianças pequenas."
+description: "Cama elástica profissional de 2 metros, ideal para espaços menores e crianças pequenas no Rio de Janeiro."
 icon: "🤸"
 popular: false
 minAge: "3 anos"

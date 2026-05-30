@@ -1,6 +1,6 @@
 ---
 title: "Boliche Humano"
-description: "Jogo de boliche gigante onde as pessoas são os pinos, diversão garantida para grupos."
+description: "Jogo de boliche gigante onde as pessoas são os pinos, diversão garantida para grupos no Rio de Janeiro."
 icon: "🎳"
 popular: false
 minAge: "6 anos"

@@ -1,6 +1,6 @@
 ---
 title: "Cama Elástica Grande (3,05m)"
-description: "Cama elástica profissional de 3,05m, o tamanho máximo para diversão em grande escala."
+description: "Cama elástica profissional de 3,05m, o tamanho máximo para diversão em grande escala no Rio de Janeiro."
 icon: "🤸"
 popular: false
 minAge: "5 anos"

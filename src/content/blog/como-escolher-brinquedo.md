@@ -1,6 +1,6 @@
 ---
 title: "Como Escolher o Brinquedo Ideal para a Idade da Criança"
-description: "Descubra qual brinquedo inflável é mais adequado para cada faixa etária e como garantir diversão com segurança. Guia completo com estatísticas e recomendações por idade."
+description: "Descubra qual brinquedo inflável é mais adequado para cada faixa etária no Rio de Janeiro e como garantir diversão com segurança no RJ. Guia completo com estatísticas e recomendações por idade."
 date: "2026-05-15"
 category: "Dicas"
 readTime: "5 min"

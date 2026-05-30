@@ -1,6 +1,6 @@
 ---
 title: "Tobogã Tubarão"
-description: "Tobogã inflável temático de tubarão, mergulhe na diversão com este brinquedo incrível."
+description: "Tobogã inflável temático de tubarão, mergulhe na diversão com este brinquedo incrível no Rio de Janeiro."
 icon: "🦈"
 popular: false
 minAge: "3 anos"

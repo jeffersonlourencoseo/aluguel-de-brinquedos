@@ -21,7 +21,16 @@
       "Bash(git remote *)",
       "Bash(git branch *)",
       "Bash(git push *)",
-      "WebFetch(domain:aluguel-de-brinquedos-six.vercel.app)"
+      "WebFetch(domain:aluguel-de-brinquedos-six.vercel.app)",
+      "Bash(curl *)",
+      "Bash(python3 -m json.tool)",
+      "PowerShell(Get-ChildItem \"src\\\\assets\\\\blog\" | Select-Object Name, @{N='SizeMB';E={[math]::Round\\($_.Length/1MB,2\\)}})",
+      "Bash(python3 -c \"from PIL import Image; print\\('Pillow OK'\\)\")",
+      "Bash(pip install *)",
+      "mcp__ide__executeCode",
+      "Bash(ls /c/Python*/python.exe)",
+      "Read(//c/Users/Jefferson/AppData/Local/Programs/**)",
+      "Bash(node *)"
     ]
   }
 }

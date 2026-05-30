@@ -1,6 +1,6 @@
 ---
 title: "Tobogã Inflável"
-description: "Tobogãs com piscina de espuma ou água para refrescar no calor e deixar a festa ainda mais animada."
+description: "Tobogãs com piscina de espuma ou água para refrescar no calor e deixar a festa ainda mais animada no Rio de Janeiro."
 icon: "🌊"
 popular: false
 minAge: "5 anos"

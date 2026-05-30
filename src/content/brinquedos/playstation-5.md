@@ -1,6 +1,6 @@
 ---
 title: "PlayStation 5"
-description: "Videogame PlayStation 5 com jogos populares, telas grandes e cadeiras gamer para eventos."
+description: "Videogame PlayStation 5 com jogos populares, telas grandes e cadeiras gamer para eventos no Rio de Janeiro."
 icon: "🎮"
 popular: true
 minAge: "6 anos"

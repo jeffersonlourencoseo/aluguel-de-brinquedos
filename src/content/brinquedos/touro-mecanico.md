@@ -1,6 +1,6 @@
 ---
 title: "Touro Mecânico"
-description: "Touro mecânico inflável para montarias radicais, quem aguentar mais tempo vence!"
+description: "Touro mecânico inflável para montarias radicais, quem aguentar mais tempo vence! no Rio de Janeiro."
 icon: "🐂"
 popular: true
 minAge: "8 anos"

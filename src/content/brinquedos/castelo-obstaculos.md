@@ -1,6 +1,6 @@
 ---
 title: "Castelo com Obstáculos"
-description: "Castelo inflável com circuito de obstáculos, escorregador e área de salto, diversão completa."
+description: "Castelo inflável com circuito de obstáculos, escorregador e área de salto, diversão completa no Rio de Janeiro."
 icon: "🏰"
 popular: false
 minAge: "3 anos"

@@ -1,6 +1,6 @@
 ---
 title: "Centopéia Inflável"
-description: "Túnel inflável em formato de centopéia para passar rastejando, divertido e desafiador."
+description: "Túnel inflável em formato de centopéia para passar rastejando, divertido e desafiador no Rio de Janeiro."
 icon: "🐛"
 popular: false
 minAge: "3 anos"

@@ -1,6 +1,6 @@
 ---
 title: "Tombo Legal"
-description: "Brinquedo inflável onde os participantes tentam se equilibrar enquanto o outro tomba, diversão garantida."
+description: "Brinquedo inflável onde os participantes tentam se equilibrar enquanto o outro tomba, diversão garantida no Rio de Janeiro."
 icon: "🤸"
 popular: false
 minAge: "5 anos"

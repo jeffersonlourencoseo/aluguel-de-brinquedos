@@ -1,6 +1,6 @@
 ---
 title: "Cama Elástica"
-description: "Camas elásticas profissionais em diversos tamanhos para todas as idades, da criançada aos adultos."
+description: "Camas elásticas profissionais em diversos tamanhos para todas as idades, da criançada aos adultos no Rio de Janeiro."
 icon: "🤸"
 popular: false
 minAge: "4 anos"

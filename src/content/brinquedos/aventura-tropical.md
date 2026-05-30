@@ -1,6 +1,6 @@
 ---
 title: "Aventura Tropical"
-description: "Tobogã inflável com tema tropical, palmeiras e cores vibrantes para festas animadas."
+description: "Tobogã inflável com tema tropical, palmeiras e cores vibrantes para festas animadas no Rio de Janeiro."
 icon: "🌴"
 popular: false
 minAge: "3 anos"

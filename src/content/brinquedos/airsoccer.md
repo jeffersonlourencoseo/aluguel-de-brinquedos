@@ -1,6 +1,6 @@
 ---
 title: "Airsoccer Inflável"
-description: "Campo inflável para airsoccer, futebol com disco flutuante sobre uma camada de ar."
+description: "Campo inflável para airsoccer, futebol com disco flutuante sobre uma camada de ar no Rio de Janeiro."
 icon: "🥏"
 popular: false
 minAge: "6 anos"

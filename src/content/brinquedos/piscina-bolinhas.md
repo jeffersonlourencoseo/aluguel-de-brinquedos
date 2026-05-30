@@ -1,6 +1,6 @@
 ---
 title: "Piscina de Bolinhas"
-description: "Piscinas cheias de bolinhas coloridas, perfeitas para crianças pequenas se divertirem com segurança."
+description: "Piscinas cheias de bolinhas coloridas, perfeitas para crianças pequenas se divertirem com segurança no Rio de Janeiro."
 icon: "🔴"
 popular: false
 minAge: "1 ano"

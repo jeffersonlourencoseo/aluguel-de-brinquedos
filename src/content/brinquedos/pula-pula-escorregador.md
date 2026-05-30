@@ -1,6 +1,6 @@
 ---
 title: "Pula Pula com Escorregador 2 em 1"
-description: "Pula-pula inflável com escorregador integrado, duas diversões em uma só estrutura."
+description: "Pula-pula inflável com escorregador integrado, duas diversões em uma só estrutura no Rio de Janeiro."
 icon: "🏰"
 popular: true
 minAge: "3 anos"

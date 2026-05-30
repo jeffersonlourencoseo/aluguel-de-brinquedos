@@ -1,6 +1,6 @@
 ---
 title: "Futmesa"
-description: "Mesa de futmesa para disputas de futebol de mesa com habilidade e precisão."
+description: "Mesa de futmesa para disputas de futebol de mesa com habilidade e precisão no Rio de Janeiro."
 icon: "⚽"
 popular: false
 minAge: "6 anos"

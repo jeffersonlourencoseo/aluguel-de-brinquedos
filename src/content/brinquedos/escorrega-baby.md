@@ -1,6 +1,6 @@
 ---
 title: "Escorrega Baby"
-description: "Escorregador baixo e seguro para bebês e crianças pequenas, diversão com proteção."
+description: "Escorregador baixo e seguro para bebês e crianças pequenas, diversão com proteção no Rio de Janeiro."
 icon: "🛝"
 popular: false
 minAge: "1 ano"

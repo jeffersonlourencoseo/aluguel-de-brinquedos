@@ -1,6 +1,6 @@
 ---
 title: "Canhão de Espuma"
-description: "Canhão de espuma profissional que enche a festa de bolhas divertidas e refrescantes."
+description: "Canhão de espuma profissional que enche a festa de bolhas divertidas e refrescantes no Rio de Janeiro."
 icon: "🫧"
 popular: false
 minAge: "3 anos"

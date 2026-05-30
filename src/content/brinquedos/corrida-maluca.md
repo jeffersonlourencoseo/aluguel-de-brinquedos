@@ -1,6 +1,6 @@
 ---
 title: "Corrida Maluca Dual Radical"
-description: "Pista inflável dual para corrida maluca com obstáculos, quem chega primeiro vence!"
+description: "Pista inflável dual para corrida maluca com obstáculos, quem chega primeiro vence! no Rio de Janeiro."
 icon: "🏃"
 popular: false
 minAge: "5 anos"

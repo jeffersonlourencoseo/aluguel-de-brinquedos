@@ -1,6 +1,6 @@
 ---
 title: "Air Game (Hockey de Mesa)"
-description: "Mesa de air game com ventilador de ar, disco flutuante e disputas eletrizantes."
+description: "Mesa de air game com ventilador de ar, disco flutuante e disputas eletrizantes no Rio de Janeiro."
 icon: "🏒"
 popular: false
 minAge: "5 anos"

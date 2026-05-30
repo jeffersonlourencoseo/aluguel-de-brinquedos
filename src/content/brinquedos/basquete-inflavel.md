@@ -1,6 +1,6 @@
 ---
 title: "Basquete Inflável"
-description: "Cesta de basquete inflável gigante para arremessos divertidos e competições em festas."
+description: "Cesta de basquete inflável gigante para arremessos divertidos e competições em festas no Rio de Janeiro."
 icon: "🏀"
 popular: false
 minAge: "4 anos"

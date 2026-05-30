@@ -1,6 +1,6 @@
 ---
 title: "Tobogã Premium"
-description: "Tobogã inflável premium com acabamento superior e tamanho imponente para festas de luxo."
+description: "Tobogã inflável premium com acabamento superior e tamanho imponente para festas de luxo no Rio de Janeiro."
 icon: "👑"
 popular: true
 minAge: "5 anos"

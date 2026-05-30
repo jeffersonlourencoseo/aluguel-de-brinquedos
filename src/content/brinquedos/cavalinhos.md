@@ -1,6 +1,6 @@
 ---
 title: "Cavalinhos"
-description: "Cavalinhos de balanço e elétricos para diversão clássica das crianças."
+description: "Cavalinhos de balanço e elétricos para diversão clássica das crianças no Rio de Janeiro."
 icon: "🐴"
 popular: false
 minAge: "2 anos"

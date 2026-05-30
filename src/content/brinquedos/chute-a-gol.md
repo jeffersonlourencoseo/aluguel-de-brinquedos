@@ -1,6 +1,6 @@
 ---
 title: "Chute a Gol Inflável"
-description: "Gol inflável gigante para chutes e defesas, perfeito para festas esportivas e torneios."
+description: "Gol inflável gigante para chutes e defesas, perfeito para festas esportivas e torneios no Rio de Janeiro."
 icon: "⚽"
 popular: false
 minAge: "4 anos"

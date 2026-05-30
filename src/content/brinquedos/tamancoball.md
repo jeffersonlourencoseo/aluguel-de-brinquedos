@@ -1,6 +1,6 @@
 ---
 title: "Tamancoball"
-description: "Jogo divertido de tamancoball, uma mistura de futebol e habilidade com tamancos gigantes."
+description: "Jogo divertido de tamancoball, uma mistura de futebol e habilidade com tamancos gigantes no Rio de Janeiro."
 icon: "🩴"
 popular: false
 minAge: "6 anos"

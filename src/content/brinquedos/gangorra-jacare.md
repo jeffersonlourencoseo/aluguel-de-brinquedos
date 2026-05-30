@@ -1,6 +1,6 @@
 ---
 title: "Gangorra Jacaré"
-description: "Gangorra inflável em formato de jacaré para diversão em dupla das crianças."
+description: "Gangorra inflável em formato de jacaré para diversão em dupla das crianças no Rio de Janeiro."
 icon: "🐊"
 popular: false
 minAge: "3 anos"

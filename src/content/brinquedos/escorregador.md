@@ -1,6 +1,6 @@
 ---
 title: "Escorregador Gigante"
-description: "Escorregadores infláveis de grande porte com adrenalina garantida para todas as idades."
+description: "Escorregadores infláveis de grande porte com adrenalina garantida para todas as idades no Rio de Janeiro."
 icon: "🛝"
 popular: false
 minAge: "5 anos"
@@ -9,7 +9,7 @@ tags: ["inflavel", "escorregador", "grande"]
 
 # Escorregador Gigante
 
-O Escorregador Gigante é perfeito para quem busca adrenalina e diversão em grande estilo. Com mais de 5 metros de altura, ele é o destaque de qualquer festa.
+O Escorregador Inflável Gigante é perfeito para quem busca adrenalina e diversão em grande estilo no Rio de Janeiro. Com mais de 5 metros de altura, este escorregador inflável é o destaque de qualquer festa infantil na região metropolitana do RJ.
 
 ## Características
 

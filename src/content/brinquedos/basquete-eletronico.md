@@ -1,6 +1,6 @@
 ---
 title: "Basquete Eletrônico"
-description: "Máquina de basquete eletrônica com contagem de pontos e timer, desafie seus amigos!"
+description: "Máquina de basquete eletrônica com contagem de pontos e timer, desafie seus amigos! no Rio de Janeiro."
 icon: "🏀"
 popular: false
 minAge: "6 anos"

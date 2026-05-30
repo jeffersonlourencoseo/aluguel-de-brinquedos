@@ -1,6 +1,6 @@
 ---
 title: "Cama Elástica Média (2,44m)"
-description: "Cama elástica profissional de 2,44m, o tamanho ideal para festas com diversas crianças."
+description: "Cama elástica profissional de 2,44m, o tamanho ideal para festas com diversas crianças no Rio de Janeiro."
 icon: "🤸"
 popular: true
 minAge: "4 anos"

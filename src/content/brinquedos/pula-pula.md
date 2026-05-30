@@ -1,6 +1,6 @@
 ---
 title: "Pula-Pula Inflável"
-description: "Castelos infláveis coloridos com segurança reforçada para horas de diversão sem parar."
+description: "Castelos infláveis coloridos com segurança reforçada para horas de diversão sem parar no Rio de Janeiro."
 icon: "🏰"
 popular: true
 minAge: "3 anos"
@@ -9,7 +9,7 @@ tags: ["inflavel", "castelo", "popular"]
 
 # Pula-Pula Inflável
 
-O Pula-Pula Inflável é o brinquedo mais procurado para festas infantis. Com design de castelo colorido e estrutura reforçada, ele garante horas de diversão para crianças de todas as idades.
+O Pula-Pula Inflável é o brinquedo mais procurado para festas infantis no Rio de Janeiro. Com design de castelo colorido e estrutura reforçada, o pula pula aluguel garante horas de diversão para crianças de todas as idades na região metropolitana do RJ.
 
 ## Características
 

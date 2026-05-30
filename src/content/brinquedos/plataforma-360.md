@@ -1,6 +1,6 @@
 ---
 title: "Plataforma 360"
-description: "Plataforma mecânica que gira em 360 graus com o participante preso, pura adrenalina."
+description: "Plataforma mecânica que gira em 360 graus com o participante preso, pura adrenalina no Rio de Janeiro."
 icon: "🎡"
 popular: false
 minAge: "8 anos"

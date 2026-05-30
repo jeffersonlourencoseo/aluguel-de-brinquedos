@@ -1,6 +1,6 @@
 ---
 title: "Tobogã Turma do Shrek"
-description: "Tobogã inflável temático da Turma do Shrek, perfeito para fãs do ogro mais querido."
+description: "Tobogã inflável temático da Turma do Shrek, perfeito para fãs do ogro mais querido no Rio de Janeiro."
 icon: "🧌"
 popular: false
 minAge: "3 anos"
