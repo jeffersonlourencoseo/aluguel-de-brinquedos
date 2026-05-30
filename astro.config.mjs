@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
+import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel/serverless';
 import { SITE_CONFIG } from './src/data/config';
 
@@ -10,6 +11,7 @@ export default defineConfig({
   site: SITE_CONFIG.url,
   integrations: [
     tailwind(),
+    sitemap(),
   ],
   i18n: {
     defaultLocale: 'pt-BR',

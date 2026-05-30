@@ -2,6 +2,8 @@
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import { SITE_CONFIG } from '../../data/config';
+import SchemaBlogPosting from '../../components/SchemaBlogPosting.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
 
 export const prerender = true;
 
@@ -15,14 +17,32 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+const pageUrl = `${SITE_CONFIG.url}/blog/${post.slug}`;
+const postImage = post.data.image ? `${SITE_CONFIG.url}${post.data.image.replace(/^\.\.\/\.\.\//, '/')}` : `${SITE_CONFIG.url}/og-image.jpg`;
 ---
 
 <Layout title={post.data.title} description={post.data.description}>
+  <Fragment slot="head">
+    <SchemaBlogPosting
+      title={post.data.title}
+      description={post.data.description}
+      url={pageUrl}
+      image={postImage}
+      datePublished={post.data.date}
+      category={post.data.category}
+      readTime={post.data.readTime}
+    />
+  </Fragment>
 
   <!-- HERO POST -->
   <section class="bg-bege">
     <div class="container mx-auto px-6 lg:px-12">
       <div class="max-w-4xl">
+        <Breadcrumb items={[
+          { label: 'Início', url: '/' },
+          { label: 'Blog', url: '/blog' },
+          { label: post.data.title, url: pageUrl },
+        ]} />
         <div class="flex items-center gap-3 mb-6">
           <span class="inline-block px-2 py-0.5 text-xs font-semibold text-brown-mid bg-bege-mid rounded-full">{post.data.category}</span>
           <span class="text-xs text-text-muted">{post.data.date}</span>

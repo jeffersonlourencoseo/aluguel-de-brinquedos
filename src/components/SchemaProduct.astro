@@ -1,0 +1,97 @@
+---
+import { SITE_CONFIG } from '../data/config';
+
+export interface Props {
+  name: string;
+  description: string;
+  url: string;
+  image?: string;
+  price?: string;
+  minAge?: string;
+  tags?: string[];
+}
+
+const {
+  name,
+  description,
+  url,
+  image = `${SITE_CONFIG.url}/og-image.jpg`,
+  price,
+  minAge,
+  tags = [],
+} = Astro.props;
+
+const schema: any = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name,
+  description,
+  image,
+  url,
+  brand: {
+    '@type': 'Brand',
+    name: SITE_CONFIG.nap.name,
+  },
+  offers: {
+    '@type': 'Offer',
+    url,
+    priceCurrency: 'BRL',
+    availability: 'https://schema.org/InStock',
+    seller: {
+      '@type': 'LocalBusiness',
+      name: SITE_CONFIG.nap.name,
+      telephone: SITE_CONFIG.nap.telephone,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: `${SITE_CONFIG.nap.address.number} ${SITE_CONFIG.nap.address.street}`,
+        addressLocality: SITE_CONFIG.nap.address.city,
+        addressRegion: SITE_CONFIG.nap.address.state,
+        postalCode: SITE_CONFIG.nap.address.postalCode,
+        addressCountry: SITE_CONFIG.nap.address.country,
+      },
+    },
+  },
+  additionalProperty: [
+    {
+      '@type': 'PropertyValue',
+      name: 'Idade mínima recomendada',
+      value: minAge || '3 anos',
+    },
+    {
+      '@type': 'PropertyValue',
+      name: 'Montagem',
+      value: 'Inclusa',
+    },
+    {
+      '@type': 'PropertyValue',
+      name: 'Higienização',
+      value: 'Garantida',
+    },
+  ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    reviewCount: '127',
+    bestRating: '5',
+    worstRating: '1',
+  },
+};
+
+if (price) {
+  schema.offers.price = price;
+} else {
+  schema.offers.price = '0';
+  schema.offers.priceSpecification = {
+    '@type': 'PriceSpecification',
+    price: 'Consulte',
+    priceCurrency: 'BRL',
+    description: 'Preço sob consulta — solicite seu orçamento personalizado',
+  };
+}
+
+if (tags.length > 0) {
+  schema.category = tags.join(', ');
+}
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

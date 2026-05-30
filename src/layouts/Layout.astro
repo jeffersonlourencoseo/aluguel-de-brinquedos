@@ -29,6 +29,7 @@ const currentPath = Astro.url.pathname;
     noindex={noindex}
   />
   <SchemaLocalBusiness />
+  <slot name="head" />
 </head>
 <body class="font-sans text-text-main antialiased bg-white">
 

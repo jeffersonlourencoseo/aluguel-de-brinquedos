@@ -2,6 +2,9 @@
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import { SITE_CONFIG } from '../../data/config';
+import SchemaProduct from '../../components/SchemaProduct.astro';
+import SchemaFAQ from '../../components/SchemaFAQ.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
 
 export const prerender = true;
 
@@ -15,14 +18,53 @@ export async function getStaticPaths() {
 
 const { item } = Astro.props;
 const { Content } = await item.render();
+const pageUrl = `${SITE_CONFIG.url}/brinquedos/${item.slug}`;
+
+const faqs = [
+  {
+    question: `Precisa de energia elétrica para usar o ${item.data.title}?`,
+    answer: 'A maioria dos brinquedos infláveis precisa de uma tomada 110V ou 220V para o inflador funcionar. Caso o local não tenha energia, oferecemos o aluguel de gerador por um valor adicional.',
+  },
+  {
+    question: `Qual o espaço mínimo necessário para o ${item.data.title}?`,
+    answer: 'O espaço varia conforme o brinquedo. Recomendamos um perímetro de segurança de pelo menos 1 metro ao redor. Entre em contato pelo WhatsApp e informamos as medidas exatas do modelo escolhido.',
+  },
+  {
+    question: 'A montagem está realmente inclusa no valor?',
+    answer: 'Sim! Nossa equipe vai até o local do evento, monta o brinquedo, faz os testes de segurança e retira após o término. Tudo incluso no preço do aluguel.',
+  },
+  {
+    question: 'Como garantem a segurança e a higienização?',
+    answer: 'Todos os brinquedos passam por manutenção preventiva mensal e higienização completa com produtos adequados após cada evento. Além disso, nossa equipe supervisiona a montagem e orienta sobre o uso correto.',
+  },
+  {
+    question: 'Quanto tempo antes preciso reservar?',
+    answer: 'Recomendamos reservar com pelo menos 7 dias de antecedência, especialmente em fins de semana e feriados. Para datas de alta demanda (dezembro, julho), quanto antes, melhor.',
+  },
+];
 ---
 
 <Layout title={item.data.title} description={item.data.description}>
+  <Fragment slot="head">
+    <SchemaProduct
+      name={item.data.title}
+      description={item.data.description}
+      url={pageUrl}
+      price={item.data.price}
+      minAge={item.data.minAge}
+      tags={item.data.tags}
+    />
+  </Fragment>
 
   <!-- HERO SERVIÇO -->
   <section class="bg-bege">
     <div class="container mx-auto px-6 lg:px-12">
       <div class="max-w-4xl">
+        <Breadcrumb items={[
+          { label: 'Início', url: '/' },
+          { label: 'Brinquedos', url: '/brinquedos' },
+          { label: item.data.title, url: pageUrl },
+        ]} />
         <div class="flex items-center gap-3 mb-6">
           {item.data.popular && (
             <span class="inline-block px-2 py-0.5 text-xs font-semibold text-brown-mid bg-bege-mid rounded-full">Mais Popular</span>
@@ -88,6 +130,8 @@ const { Content } = await item.render();
               ))}
             </div>
           </div>
+
+          <SchemaFAQ questions={faqs} />
         </div>
       </div>
     </div>

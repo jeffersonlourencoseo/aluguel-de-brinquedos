@@ -1,0 +1,35 @@
+---
+export interface Props {
+  questions: { question: string; answer: string }[];
+}
+
+const { questions } = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: questions.map((q) => ({
+    '@type': 'Question',
+    name: q.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: q.answer,
+    },
+  })),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+<!-- FAQ Visível -->
+<div class="bg-white border border-bege-dark rounded-[10px] p-6 mt-6">
+  <h3 class="text-sm font-bold text-text-main mb-4">Perguntas Frequentes</h3>
+  <div class="space-y-4">
+    {questions.map((q) => (
+      <div class="border-b border-bege-dark last:border-0 pb-4 last:pb-0">
+        <h4 class="text-xs font-bold text-orange-dark mb-1">{q.question}</h4>
+        <p class="text-xs text-text-muted leading-relaxed">{q.answer}</p>
+      </div>
+    ))}
+  </div>
+</div>

@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import SchemaReviews from '../components/SchemaReviews.astro';
 import { SITE_CONFIG } from '../data/config';
 import { getCollection } from 'astro:content';
 const brinquedos = await getCollection('brinquedos');
@@ -9,6 +10,9 @@ const brinquedos = await getCollection('brinquedos');
   title="Aluguel de Brinquedos para Festas | Diversão Garantida"
   description="Aluguel de brinquedos para festas infantis e eventos em toda a região metropolitana. Pula-pula, escorregadores, piscinas de bolinhas, cama elástica e muito mais. Orçamento sem compromisso!"
 >
+  <Fragment slot="head">
+    <SchemaReviews />
+  </Fragment>
 
   <!-- HERO SECTION -->
   <section class="relative bg-bege overflow-hidden">
