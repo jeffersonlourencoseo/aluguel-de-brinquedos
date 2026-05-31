@@ -12,7 +12,7 @@ export const SITE_CONFIG = {
     'Aluguel de brinquedos para festas infantis e eventos em toda a regiao metropolitana. Pula-pula, escorregadores, piscinas de bolinhas, cama elastica e muito mais. Orcamento sem compromisso!',
 
   // Dominio
-  url: 'https://aluguel-de-brinquedos-six.vercel.app',
+  url: 'https://www.alugueldebrinquedorj.com.br',
 
   // NAP (Name, Address, Phone) - SEO Local
   nap: {
@@ -21,7 +21,7 @@ export const SITE_CONFIG = {
     whatsapp: '5521997751577',
     whatsappDisplay: '(21) 99775-1577',
     phoneDisplay: '(21) 99775-1577',
-    email: 'contato@alugueldebrinquedos.com.br',
+    email: 'contato@alugueldebrinquedorj.com.br',
     address: {
       street: 'Av. Brasil',
       number: '11201',

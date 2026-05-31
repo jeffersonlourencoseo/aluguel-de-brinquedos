@@ -125,7 +125,7 @@
 
 ## Como solicitar orçamento
 
-1. Acesse https://www.alugueldebrinquedos.com.br/brinquedos
+1. Acesse https://www.alugueldebrinquedorj.com.br/brinquedos
 2. Escolha os brinquedos desejados
 3. Clique em "Solicitar Orçamento" ou envie mensagem pelo WhatsApp (21) 99775-1577
 4. Informe: data, horário, endereço e brinquedos escolhidos

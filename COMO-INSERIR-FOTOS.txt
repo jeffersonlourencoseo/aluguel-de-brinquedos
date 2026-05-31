@@ -229,7 +229,7 @@ Depois do git push, o site na Vercel demora 1 a 3 minutos para atualizar automat
 
 Conferir a pagina do catalogo:
 
-1. Acesse: https://aluguel-de-brinquedos-six.vercel.app/brinquedos
+1. Acesse: https://www.alugueldebrinquedorj.com.br/brinquedos
 2. Procure o brinquedo que voce adicionou a foto
 3. A foto deve aparecer no card, em vez do emoji
 

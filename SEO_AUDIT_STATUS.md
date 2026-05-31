@@ -1,7 +1,7 @@
 # Relatório SEO Audit + AI SEO — Status Atualizado
 
 > Última atualização: 2026-05-30
-> Site: https://aluguel-de-brinquedos-six.vercel.app
+> Site: https://www.alugueldebrinquedorj.com.br
 > Repositório: https://github.com/jeffersonlourencoseo/aluguel-de-brinquedos
 
 ---
