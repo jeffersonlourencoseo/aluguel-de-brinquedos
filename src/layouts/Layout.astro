@@ -173,18 +173,25 @@ const currentPath = Astro.url.pathname;
       });
     })();
 
-    // Header shadow on scroll
+    // Header shadow on scroll — otimizado com RAF para evitar forced reflow
     (function() {
       var header = document.querySelector('header');
       if (!header) return;
+      var ticking = false;
       function updateHeader() {
         if (window.scrollY > 10) {
           header.classList.add('shadow-soft-lg');
         } else {
           header.classList.remove('shadow-soft-lg');
         }
+        ticking = false;
       }
-      window.addEventListener('scroll', updateHeader, { passive: true });
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          requestAnimationFrame(updateHeader);
+          ticking = true;
+        }
+      }, { passive: true });
       updateHeader();
     })();
   </script>
@@ -329,6 +336,12 @@ const currentPath = Astro.url.pathname;
   }
   .link-underline:hover::after {
     width: 100%;
+  }
+
+  /* Header optimization: promote to compositor layer for smooth scroll */
+  header {
+    will-change: transform;
+    contain: layout style;
   }
 
   /* Fade-in animation for scroll reveals */
