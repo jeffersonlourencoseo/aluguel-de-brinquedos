@@ -7,8 +7,6 @@ readTime: "6 min"
 image: "../../assets/blog/pexels-photo-32370557.jpeg"
 ---
 
-# Tendências de Brinquedos para Festas em 2026
-
 **O mercado de aluguel de brinquedos no Brasil movimenta R$ 3,2 bilhões por ano**, segundo dados da ABRAFE (2024). Em 2026, 5 tendências estão dominando as festas infantis no Rio de Janeiro. Entender essas tendências ajuda você a escolher os brinquedos que vão fazer seu evento ser lembrado por todos.
 
 ## Brinquedos Interativos e Híbridos

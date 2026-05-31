@@ -65,7 +65,7 @@ const postImage = post.data.image ? `${SITE_CONFIG.url}${post.data.image.replace
             <Content />
 
             <!-- CTA INLINE NO MEIO DO ARTIGO -->
-            <div class="not-prose my-10 bg-bege border-2 border-orange/20 rounded-[10px] p-6 md:p-8">
+            <div class="not-prose my-10 bg-bege border-2 border-orange/20 rounded-2xl p-6 md:p-8">
               <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
                 <div class="flex-1">
                   <h3 class="text-lg font-bold text-text-main mb-1">Quer Alugar Brinquedos para Festa?</h3>
@@ -83,7 +83,7 @@ const postImage = post.data.image ? `${SITE_CONFIG.url}${post.data.image.replace
         <!-- SIDEBAR -->
         <div class="space-y-6">
           <!-- CTA Orçamento -->
-          <div class="bg-orange-dark rounded-[10px] p-6 text-white">
+          <div class="bg-orange-dark rounded-2xl p-6 text-white">
             <h3 class="text-xl font-bold mb-2">Quer alugar brinquedos?</h3>
             <p class="text-sm text-white/80 mb-4">Solicite seu orçamento gratuito agora e garanta a diversão do seu evento.</p>
             <a href={SITE_CONFIG.social.whatsapp} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full px-4 py-3 text-sm font-semibold text-orange-dark bg-bege rounded-xl hover:bg-white transition-all">
@@ -93,7 +93,7 @@ const postImage = post.data.image ? `${SITE_CONFIG.url}${post.data.image.replace
           </div>
 
           <!-- Posts Relacionados -->
-          <div class="bg-white border border-bege-dark rounded-[10px] p-6">
+          <div class="bg-white border border-bege-dark rounded-2xl p-6">
             <h3 class="text-sm font-bold text-text-main mb-4">Outras Dicas de Festas</h3>
             <div class="space-y-4">
               <a href="/blog/seguranca-brinquedos" class="block">
@@ -112,7 +112,7 @@ const postImage = post.data.image ? `${SITE_CONFIG.url}${post.data.image.replace
           </div>
 
           <!-- Categorias -->
-          <div class="bg-white border border-bege-dark rounded-[10px] p-6">
+          <div class="bg-white border border-bege-dark rounded-2xl p-6">
             <h3 class="text-sm font-bold text-text-main mb-4">Categorias</h3>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-0.5 text-xs font-semibold text-brown-mid bg-bege-mid rounded-full">Dicas</span>
@@ -139,4 +139,11 @@ const postImage = post.data.image ? `${SITE_CONFIG.url}${post.data.image.replace
   <!-- ESPAÇO PARA O CTA FLUTUANTE NÃO TAPAR CONTEÚDO EM MOBILE -->
   <div class="h-14 lg:hidden"></div>
 
+  <style is:global>
+    @media (max-width: 1023px) {
+      #whatsapp-float {
+        display: none !important;
+      }
+    }
+  </style>
 </Layout>

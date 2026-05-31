@@ -7,8 +7,6 @@ readTime: "6 min"
 image: "../../assets/blog/pexels-photo-27175432.jpeg"
 ---
 
-# Pula-Pula vs Cama Elástica: Qual é Melhor para sua Festa?
-
 Escolher entre **pula-pula** e **cama elástica** para uma festa infantil pode parecer simples, mas cada brinquedo oferece experiências diferentes. Esta comparação detalhada ajuda você a decidir com base no perfil dos convidados, espaço disponível e orçamento.
 
 ## O que é o Pula-Pula Inflável?

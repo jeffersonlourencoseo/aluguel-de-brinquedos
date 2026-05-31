@@ -7,8 +7,6 @@ readTime: "5 min"
 image: "../../assets/blog/pexels-photo-27175432.jpeg"
 ---
 
-# Como Escolher o Brinquedo Ideal para a Idade da Criança
-
 Escolher o brinquedo certo para uma festa infantil pode parecer simples, mas existem fatores importantes que garantem a diversão e a segurança das crianças. Este guia apresenta recomendações baseadas em faixa etária, com dados do setor de entretenimento infantil.
 
 ## Crianças de 1 a 3 anos

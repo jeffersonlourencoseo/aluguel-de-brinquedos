@@ -7,8 +7,6 @@ readTime: "7 min"
 image: "../../assets/blog/pexels-photo-28487969.jpeg"
 ---
 
-# 5 Dicas para Organizar uma Festa Infantil Inesquecível
-
 **Organizar uma festa infantil pode parecer desafiador, mas com o planejamento certo, tudo fica mais fácil.** Segundo pesquisa da ABRAFE (2024), 68% dos pais gastam entre R$ 2.000 e R$ 8.000 em uma festa infantil no Rio de Janeiro. Com as 5 dicas abaixo, você pode reduzir esse custo em até 30% sem perder qualidade.
 
 ## 1. Defina o Orçamento Antes de Tudo

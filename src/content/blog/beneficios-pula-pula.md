@@ -7,8 +7,6 @@ readTime: "4 min"
 image: "../../assets/blog/pexels-photo-6068009.jpeg"
 ---
 
-# Benefícios do Pula-Pula para o Desenvolvimento Infantil
-
 **O pula-pula é muito mais do que diversão.** Estudos científicos comprovam que 30 minutos de uso diário em pula-pula inflável promovem benefícios físicos, cognitivos e sociais equivalentes a 45 minutos de atividade física tradicional. Conheça os 5 benefícios fundamentais apoiados por pesquisa.
 
 ## Desenvolvimento Motor e Fortalecimento Muscular

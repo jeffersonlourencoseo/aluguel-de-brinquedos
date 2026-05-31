@@ -7,8 +7,6 @@ readTime: "4 min"
 image: "../../assets/blog/pexels-photo-28487966.jpeg"
 ---
 
-# Segurança nos Brinquedos Infláveis: O que Verificar
-
 **A segurança deve ser a prioridade absoluta ao alugar brinquedos infláveis.** Cerca de 40% dos acidentes em festas infantis envolvem brinquedos inadequados ou montagem incorreta, segundo levantamento do Ministério da Saúde (2023). Este guia apresenta os 6 pontos essenciais para garantir que seu evento seja 100% seguro.
 
 ## Verifique a Certificação do INMETRO
