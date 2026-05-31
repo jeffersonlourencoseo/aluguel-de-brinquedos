@@ -81,12 +81,7 @@ if (price) {
   schema.offers.price = price;
 } else {
   schema.offers.price = '0';
-  schema.offers.priceSpecification = {
-    '@type': 'PriceSpecification',
-    price: 'Consulte',
-    priceCurrency: 'BRL',
-    description: 'Preço sob consulta — solicite seu orçamento personalizado',
-  };
+  schema.offers.description = 'Preço sob consulta — solicite seu orçamento personalizado pelo WhatsApp';
 }
 
 if (tags.length > 0) {
