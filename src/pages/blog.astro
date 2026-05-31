@@ -25,7 +25,7 @@ for (const [path, mod] of Object.entries(images)) {
   <!-- HERO -->
   <section class="bg-bege">
     <div class="container mx-auto px-6 lg:px-12">
-      <div class="max-w-4xl">
+      <div class="max-w-4xl reveal">
         <Breadcrumb items={[
           { label: 'Início', url: '/' },
           { label: 'Blog', url: '/blog' },
@@ -44,12 +44,12 @@ for (const [path, mod] of Object.entries(images)) {
   <!-- LISTAGEM -->
   <section class="bg-white">
     <div class="container mx-auto px-6 lg:px-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 reveal stagger-children">
         {posts.map((post) => {
           const filename = post.data.image ? post.data.image.replace(/^.*[\\\/]/, '') : null;
           const imgSrc = filename ? imageMap[filename] : null;
           return (
-            <article class="bg-white border border-bege-dark rounded-[10px] overflow-hidden hover:shadow-sm hover:border-orange-light transition cursor-default">
+            <article class="bg-white border border-bege-dark rounded-2xl overflow-hidden card-hover hover:border-orange-light cursor-default">
               <div class="h-48 bg-bege-mid overflow-hidden">
                 {imgSrc ? (
                   <Image
@@ -92,14 +92,14 @@ for (const [path, mod] of Object.entries(images)) {
   <!-- NEWSLETTER -->
   <section class="bg-orange-dark">
     <div class="container mx-auto px-6 lg:px-12">
-      <div class="max-w-4xl mx-auto text-center">
+      <div class="max-w-4xl mx-auto text-center reveal">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">Quer Receber Novidades?</h2>
         <p class="text-lg text-white/80 mb-10 max-w-2xl mx-auto">
           Cadastre-se para receber dicas exclusivas, promoções e novidades sobre aluguel de brinquedos diretamente no seu e-mail.
         </p>
         <form class="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
           <input type="email" placeholder="seu@email.com" class="flex-1 px-4 py-3 rounded-xl text-text-main bg-white border-0 focus:outline-none focus:ring-2 focus:ring-orange" />
-          <button type="submit" class="inline-flex items-center justify-center px-6 py-3 text-lg font-semibold text-orange-dark bg-bege rounded-xl hover:bg-white transition-all">
+          <button type="submit" class="inline-flex items-center justify-center px-6 py-3 text-lg font-semibold text-orange-dark bg-bege rounded-xl hover:bg-white transition-all btn-press">
             Cadastrar
           </button>
         </form>
