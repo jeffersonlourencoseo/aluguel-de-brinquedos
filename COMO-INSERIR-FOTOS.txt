@@ -1,0 +1,299 @@
+========================================
+TUTORIAL: COMO INSERIR FOTOS REAIS DOS BRINQUEDOS NO SITE
+========================================
+
+Ultima atualizacao: 30/05/2026
+Tempo estimado: 3 a 5 minutos por brinquedo
+
+
+----------------------------------------
+O QUE VOCE PRECISA TER
+----------------------------------------
+
+1. A foto do brinquedo salva no computador (celular, camera, WhatsApp, etc.)
+2. Acesso a pasta do projeto: C:\Users\Jefferson\Desktop\SEO LOCAL\ALUGUEL DE BRINQUEDO
+3. Editor de texto (Bloco de Notas, VS Code, ou qualquer editor simples)
+4. Conexao com internet para subir as alteracoes
+
+
+----------------------------------------
+PASSO 1: PREPARAR A FOTO
+----------------------------------------
+
+Regras importantes:
+
+- FORMATO: Salvar como .jpg ou .webp
+- TAMANHO: Nao pode passar de 500 KB por foto
+- RESOLUCAO: Minimo 800x600 pixels (quanto maior, melhor)
+- NOME DO ARQUIVO: Usar apenas letras minusculas, numeros e hifen. NAO usar espaco, acento ou c-cedilha
+
+Exemplos de nome CORRETO:
+  pula-pula.jpg          (certo)
+  cama-elastica-grande.jpg (certo)
+  toboga-radical.webp     (certo)
+
+Exemplos de nome ERRADO:
+  Pula Pula.jpg           (errado - tem espaco e maiuscula)
+  cama-elastica.jpg      (errado - tem acento)
+  toboga.jpg              (errado - tem c-cedilha e til)
+
+
+COMO DIMINUIR O TAMANHO DA FOTO (Se For Muito Grande):
+
+Opcao A - Site online (mais facil):
+1. Acesse https://squoosh.app
+2. Arraste a foto para o site
+3. No canto direito, escolha "WebP" ou "MozJPEG"
+4. Mova a barra Quality para 75 a 80
+5. Clique em "Save" (salvar)
+6. Use o arquivo salvo
+
+Opcao B - Windows (sem internet):
+1. Clique com o botao direito na foto -> Abrir com -> Paint
+2. Clique em Redimensionar (no menu superior)
+3. Escolha "Porcentagem" e coloque 50% se a foto for muito grande
+4. Salvar como JPEG (qualidade media/alta)
+
+
+----------------------------------------
+PASSO 2: COPIAR A FOTO PARA A PASTA CORRETA
+----------------------------------------
+
+Caminho da pasta:
+
+  C:\Users\Jefferson\Desktop\SEO LOCAL\ALUGUEL DE BRINQUEDO\public\images\brinquedos
+
+Se a pasta "brinquedos" nao existir dentro de "images", crie uma nova pasta com esse nome.
+
+Acao: Copie a foto preparada (do Passo 1) e cole dentro dessa pasta.
+
+Exemplo visual da pasta depois de colocar 3 fotos:
+
+  public/
+    images/
+      brinquedos/
+        pula-pula.jpg
+        cama-elastica.jpg
+        escorregador.jpg
+
+
+----------------------------------------
+PASSO 3: DESCOBRIR O ARQUIVO DO BRINQUEDO
+----------------------------------------
+
+Onde estao os arquivos:
+
+  C:\Users\Jefferson\Desktop\SEO LOCAL\ALUGUEL DE BRINQUEDO\src\content\brinquedos
+
+Cada brinquedo tem um arquivo com extensao .md. O nome do arquivo e igual ao endereco da pagina do site.
+
+Como achar o arquivo certo:
+
+Se voce quer adicionar a foto do Pula-Pula, procure o arquivo:
+  src\content\brinquedos\pula-pula.md
+
+Se for da Cama Elastica Grande:
+  src\content\brinquedos\cama-elastica-grande.md
+
+Dica: o nome do arquivo .md sempre corresponde ao final da URL do site. Se a URL e /brinquedos/pula-pula, o arquivo e pula-pula.md.
+
+
+----------------------------------------
+PASSO 4: EDITAR O ARQUIVO DO BRINQUEDO
+----------------------------------------
+
+Abrir o arquivo:
+1. Clique com o botao direito no arquivo .md do brinquedo
+2. Escolha "Abrir com -> Bloco de Notas" (ou VS Code, se tiver)
+
+O que voce vai ver:
+
+O arquivo comeca com um bloco chamado frontmatter (entre --- e ---). E ali que voce vai adicionar a foto.
+
+Exemplo do arquivo ANTES da edicao:
+
+---
+title: "Pula-Pula Inflavel"
+description: "Castelos inflaveis coloridos..."
+icon: "🏰"
+popular: true
+minAge: "3 anos"
+tags: ["inflavel", "castelo", "popular"]
+---
+
+O que voce deve fazer:
+
+Adicione uma nova linha DENTRO do frontmatter (antes do segundo ---) com o caminho da foto.
+
+Exemplo do arquivo DEPOIS da edicao:
+
+---
+title: "Pula-Pula Inflavel"
+description: "Castelos inflaveis coloridos..."
+icon: "🏰"
+image: "/images/brinquedos/pula-pula.jpg"
+popular: true
+minAge: "3 anos"
+tags: ["inflavel", "castelo", "popular"]
+---
+
+Regras importantes na edicao:
+
+- A linha image: deve ficar depois de icon: e antes de popular:
+- O caminho deve comecar com /images/brinquedos/
+  NAO coloque public/ no inicio. O site ja sabe que esta em public/
+- O nome do arquivo na linha image: deve ser EXATAMENTE IGUAL ao nome do arquivo salvo na pasta
+  Se salvou pula-pula.jpg, escreva pula-pula.jpg. Se for .webp, escreva .webp
+- Use aspas ao redor do caminho: image: "/images/brinquedos/nome.jpg"
+- Nao esqueca os dois-pontos depois de image
+
+Copie e cole este modelo. So troque o nome:
+
+  image: "/images/brinquedos/NOME-DO-ARQUIVO.jpg"
+
+Troque NOME-DO-ARQUIVO.jpg pelo nome real da sua foto.
+
+
+----------------------------------------
+PASSO 5: SALVAR O ARQUIVO
+----------------------------------------
+
+1. No Bloco de Notas, pressione Ctrl + S (ou Arquivo -> Salvar)
+2. Feche o editor
+
+Pronto! A foto esta vinculada ao brinquedo.
+
+
+----------------------------------------
+PASSO 6: TESTAR LOCALMENTE (ANTES DE SUBIR)
+----------------------------------------
+
+Abrir o Terminal:
+1. Pressione Windows + R
+2. Digite cmd e pressione Enter
+3. Navegue ate a pasta do projeto com este comando:
+
+  cd "C:\Users\Jefferson\Desktop\SEO LOCAL\ALUGUEL DE BRINQUEDO"
+
+Rodar o comando de build:
+
+  npm run build
+
+O que esperar:
+
+- Se aparecer "Complete!" no final -> esta tudo certo
+- Se aparecer erro vermelho -> veja a mensagem de erro. Geralmente e:
+  - Nome do arquivo digitado errado no .md
+  - Foto nao esta na pasta
+  - Aspas ou dois-pontos faltando
+
+Testar no Navegador (Preview Local):
+
+  npm run preview
+
+Abra o navegador em http://localhost:4321/brinquedos e veja se a foto aparece no catalogo.
+
+
+----------------------------------------
+PASSO 7: SUBIR PARA O GITHUB (PUBLICAR NO SITE)
+----------------------------------------
+
+Comandos no Terminal:
+
+Com a pasta do projeto aberta no terminal, execute um por um:
+
+  git add -A
+
+  git commit -m "feat: adiciona fotos reais dos brinquedos [lista]"
+
+Dica: troque [lista] pelos nomes dos brinquedos que voce adicionou. Exemplo:
+
+  git commit -m "feat: adiciona fotos reais dos brinquedos pula-pula, cama-elastica e escorregador"
+
+  git push origin main
+
+Verificar se subiu:
+1. Acesse https://github.com/jeffersonlourencoseo/aluguel-de-brinquedos
+2. Clique em "Commits" (canto superior direito)
+3. Procure o commit que voce acabou de fazer
+4. Clique nele e verifique se as fotos aparecem na lista de arquivos alterados
+
+
+----------------------------------------
+PASSO 8: VERIFICAR NO SITE AO VIVO
+----------------------------------------
+
+Esperar o Deploy:
+
+Depois do git push, o site na Vercel demora 1 a 3 minutos para atualizar automaticamente.
+
+Conferir a pagina do catalogo:
+
+1. Acesse: https://aluguel-de-brinquedos-six.vercel.app/brinquedos
+2. Procure o brinquedo que voce adicionou a foto
+3. A foto deve aparecer no card, em vez do emoji
+
+Conferir a pagina individual:
+
+1. Clique em "Ver detalhes" no card do brinquedo
+2. A foto grande deve aparecer logo abaixo do titulo
+
+
+----------------------------------------
+CHECKLIST DE VERIFICACAO
+----------------------------------------
+
+Use esta lista para cada brinquedo:
+
+[ ] Foto tirada/salva no computador
+[ ] Foto otimizada (menos de 500 KB)
+[ ] Foto copiada para public/images/brinquedos/
+[ ] Nome do arquivo sem espaco, acento ou c-cedilha
+[ ] Arquivo .md aberto e editado
+[ ] Linha image: "/images/brinquedos/nome.jpg" adicionada ao frontmatter
+[ ] Arquivo salvo (Ctrl + S)
+[ ] Build local rodou sem erros (npm run build)
+[ ] Commit feito com mensagem descritiva
+[ ] Push enviado para GitHub (git push)
+[ ] Site ao vivo verificado e foto aparecendo
+
+
+----------------------------------------
+EXEMPLO COMPLETO - DO INICIO AO FIM
+----------------------------------------
+
+Brinquedo: Pula-Pula Inflavel
+
+Etapa | O que fazer                              | Resultado esperado
+------|------------------------------------------|----------------------
+1     | Tirei foto do pula-pula montado em festa | Arquivo IMG_2026.jpg no celular
+2     | Enviei para o PC e renomeei              | pula-pula.jpg pronto
+3     | Otimizei no squoosh.app (WebP 80%)       | pula-pula.webp com 180 KB
+4     | Copiei para public/images/brinquedos/    | Foto na pasta correta
+5     | Abri src/content/brinquedos/pula-pula.md | Arquivo aberto
+6     | Adicionei image: "/images/brinquedos/..."| Frontmatter atualizado
+7     | Salvei (Ctrl + S) e fechei               | Arquivo salvo
+8     | No terminal, rodei npm run build           | "Complete!"
+9     | Rodei git add -A                         | Arquivos preparados
+10    | Rodei git commit -m "feat: adiciona..."  | Commit criado
+11    | Rodei git push origin main               | Subiu para GitHub
+12    | Esperei 2 min e acessei o site           | Foto aparecendo no catalogo
+
+
+----------------------------------------
+RESUMO EM UMA FRASE
+----------------------------------------
+
+Salve a foto em public/images/brinquedos/, adicione image: "/images/brinquedos/nome.jpg" no arquivo .md, rode npm run build, commit e push.
+
+
+----------------------------------------
+PRECISA DE AJUDA?
+----------------------------------------
+
+Se algo der errado, anote:
+1. Qual brinquedo voce esta tentando adicionar
+2. Qual etapa deu problema (1 a 8)
+3. A mensagem de erro exata (copie e cole)
+
+Com essas 3 informacoes, e possivel resolver rapidamente.
