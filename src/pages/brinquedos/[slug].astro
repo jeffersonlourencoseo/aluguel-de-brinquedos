@@ -75,11 +75,20 @@ const faqs = [
           Aluguel de {item.data.title} no Rio de Janeiro
         </h1>
         <div class="flex items-center gap-4 mb-8">
-          <span class="text-4xl">{item.data.icon}</span>
+          {item.data.image ? (
+            <img src={item.data.image} alt={`${item.data.title} para aluguel no Rio de Janeiro`} class="w-16 h-16 rounded-xl object-cover bg-bege-mid" width="64" height="64" loading="eager" />
+          ) : (
+            <span class="text-4xl">{item.data.icon}</span>
+          )}
           <div>
             <div class="text-sm text-text-muted">Montagem e retirada inclusas</div>
           </div>
         </div>
+        {item.data.image && (
+          <div class="aspect-video overflow-hidden rounded-2xl bg-bege-mid mb-12">
+            <img src={item.data.image} alt={`${item.data.title} para aluguel no Rio de Janeiro`} class="w-full h-full object-cover img-zoom" width="1200" height="675" loading="eager" />
+          </div>
+        )}
       </div>
     </div>
   </section>

@@ -31,7 +31,8 @@
       "Bash(ls /c/Python*/python.exe)",
       "Read(//c/Users/Jefferson/AppData/Local/Programs/**)",
       "Bash(node *)",
-      "Bash(python3 -c \"import sys, re; html = sys.stdin.read\\(\\); m = re.search\\(r'<h1[^>]*>\\(.*?\\)</h1>', html, re.DOTALL\\); print\\(m.group\\(1\\).strip\\(\\) if m else 'N/A'\\)\")"
+      "Bash(python3 -c \"import sys, re; html = sys.stdin.read\\(\\); m = re.search\\(r'<h1[^>]*>\\(.*?\\)</h1>', html, re.DOTALL\\); print\\(m.group\\(1\\).strip\\(\\) if m else 'N/A'\\)\")",
+      "PowerShell(New-Item *)"
     ]
   }
 }

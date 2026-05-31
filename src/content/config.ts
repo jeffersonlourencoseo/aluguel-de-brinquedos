@@ -20,6 +20,7 @@ const brinquedosCollection = defineCollection({
     description: z.string(),
     price: z.string().optional(),
     icon: z.string(),
+    image: z.string().optional(),
     popular: z.boolean().default(false),
     minAge: z.string().optional(),
     tags: z.array(z.string()).default([])
