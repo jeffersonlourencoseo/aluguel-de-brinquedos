@@ -1,9 +1,13 @@
 ---
+import { SITE_CONFIG } from '../data/config';
+
 export interface Props {
   items: { label: string; url: string }[];
 }
 
 const { items } = Astro.props;
+
+const baseUrl = SITE_CONFIG.url;
 
 const schema = {
   '@context': 'https://schema.org',
@@ -12,7 +16,7 @@ const schema = {
     '@type': 'ListItem',
     position: index + 1,
     name: item.label,
-    item: item.url,
+    item: item.url.startsWith('http') ? item.url : `${baseUrl}${item.url}`,
   })),
 };
 ---
