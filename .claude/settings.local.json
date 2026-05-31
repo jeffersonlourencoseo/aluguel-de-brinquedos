@@ -33,7 +33,8 @@
       "Bash(node *)",
       "Bash(python3 -c \"import sys, re; html = sys.stdin.read\\(\\); m = re.search\\(r'<h1[^>]*>\\(.*?\\)</h1>', html, re.DOTALL\\); print\\(m.group\\(1\\).strip\\(\\) if m else 'N/A'\\)\")",
       "PowerShell(New-Item *)",
-      "Read(//c/c/Users/Jefferson/Desktop/SEO LOCAL/ALUGUEL DE BRINQUEDO/dist/client/**)"
+      "Read(//c/c/Users/Jefferson/Desktop/SEO LOCAL/ALUGUEL DE BRINQUEDO/dist/client/**)",
+      "Bash(findstr -i \"location\\\\|HTTP\")"
     ]
   }
 }
