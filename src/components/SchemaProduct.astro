@@ -84,6 +84,43 @@ if (price) {
   schema.offers.description = 'Preço sob consulta — solicite seu orçamento personalizado pelo WhatsApp';
 }
 
+// Campos exigidos pelo Google Merchant Center para validação completa do schema Product
+schema.offers.shippingDetails = {
+  '@type': 'OfferShippingDetails',
+  shippingRate: {
+    '@type': 'MonetaryAmount',
+    value: '0',
+    currency: 'BRL',
+  },
+  shippingDestination: {
+    '@type': 'DefinedRegion',
+    addressCountry: 'BR',
+    addressRegion: 'RJ',
+  },
+  deliveryTime: {
+    '@type': 'ShippingDeliveryTime',
+    handlingTime: {
+      '@type': 'QuantitativeValue',
+      minValue: '0',
+      maxValue: '1',
+      unitCode: 'DAY',
+    },
+    transitTime: {
+      '@type': 'QuantitativeValue',
+      minValue: '0',
+      maxValue: '1',
+      unitCode: 'DAY',
+    },
+  },
+};
+
+schema.offers.hasMerchantReturnPolicy = {
+  '@type': 'MerchantReturnPolicy',
+  returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
+  returnMethod: 'https://schema.org/ReturnByMail',
+  returnFees: 'https://schema.org/FreeReturn',
+};
+
 if (tags.length > 0) {
   schema.category = tags.join(', ');
 }
