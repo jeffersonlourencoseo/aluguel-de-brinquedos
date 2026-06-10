@@ -13,8 +13,6 @@ export default defineConfig({
     tailwind(),
     sitemap(),
   ],
-  i18n: {
-    defaultLocale: 'pt-BR',
-    locales: ['pt-BR'],
-  },
+  // i18n removido: com apenas uma locale, a configuração era desnecessária
+  // e potencialmente causava redirects automáticos no modo server.
 });

@@ -23,7 +23,11 @@ const brinquedosCollection = defineCollection({
     image: z.string().optional(),
     popular: z.boolean().default(false),
     minAge: z.string().optional(),
-    tags: z.array(z.string()).default([])
+    tags: z.array(z.string()).default([]),
+    faqs: z.array(z.object({
+      question: z.string(),
+      answer: z.string()
+    })).optional()
   })
 });
 

@@ -20,28 +20,20 @@ const { item } = Astro.props;
 const { Content } = await item.render();
 const pageUrl = `${SITE_CONFIG.url}/brinquedos/${item.slug}`;
 
-const faqs = [
+// Usa FAQs personalizadas do frontmatter, ou fallback mínimo genérico
+// Fallback reduzido de propósito para evitar conteúdo quase-duplicado em massa
+const defaultFaqs = [
   {
-    question: `Precisa de energia elétrica para usar o ${item.data.title}?`,
-    answer: 'A maioria dos brinquedos infláveis precisa de uma tomada 110V ou 220V para o inflador funcionar. Caso o local não tenha energia, oferecemos o aluguel de gerador por um valor adicional.',
+    question: `Como funciona o aluguel de ${item.data.title}?`,
+    answer: `O aluguel do ${item.data.title} inclui entrega, montagem, supervisão e retirada no local do evento. Basta agendar a data e horário desejados.`,
   },
   {
-    question: `Qual o espaço mínimo necessário para o ${item.data.title}?`,
-    answer: 'O espaço varia conforme o brinquedo. Recomendamos um perímetro de segurança de pelo menos 1 metro ao redor. Entre em contato pelo WhatsApp e informamos as medidas exatas do modelo escolhido.',
-  },
-  {
-    question: 'A montagem está realmente inclusa no valor?',
-    answer: 'Sim! Nossa equipe vai até o local do evento, monta o brinquedo, faz os testes de segurança e retira após o término. Tudo incluso no preço do aluguel.',
-  },
-  {
-    question: 'Como garantem a segurança e a higienização?',
-    answer: 'Todos os brinquedos passam por manutenção preventiva mensal e higienização completa com produtos adequados após cada evento. Além disso, nossa equipe supervisiona a montagem e orienta sobre o uso correto.',
-  },
-  {
-    question: 'Quanto tempo antes preciso reservar?',
-    answer: 'Recomendamos reservar com pelo menos 7 dias de antecedência, especialmente em fins de semana e feriados. Para datas de alta demanda (dezembro, julho), quanto antes, melhor.',
+    question: `Qual a área necessária para instalar o ${item.data.title}?`,
+    answer: `Recomendamos entrar em contato pelo WhatsApp para informarmos as medidas exatas do ${item.data.title}, incluindo a margem de segurança ao redor.`,
   },
 ];
+
+const faqs = item.data.faqs && item.data.faqs.length > 0 ? item.data.faqs : defaultFaqs;
 ---
 
 <Layout title={`Aluguel de ${item.data.title} no Rio de Janeiro | Aluguel de Brinquedos RJ`} description={item.data.description}>
