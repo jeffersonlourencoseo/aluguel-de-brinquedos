@@ -1,5 +1,6 @@
 ---
 import { SITE_CONFIG } from '../data/config';
+import { CUSTOMER_REVIEWS, AGGREGATE_RATING } from '../data/reviews';
 
 export interface Props {
   name: string;
@@ -9,6 +10,7 @@ export interface Props {
   price?: string;
   minAge?: string;
   tags?: string[];
+  reviews?: typeof CUSTOMER_REVIEWS;
 }
 
 const {
@@ -19,6 +21,7 @@ const {
   price,
   minAge,
   tags = [],
+  reviews = CUSTOMER_REVIEWS,
 } = Astro.props;
 
 const schema: any = {
@@ -51,6 +54,8 @@ const schema: any = {
       },
     },
   },
+  aggregateRating: AGGREGATE_RATING,
+  review: reviews,
   additionalProperty: [
     {
       '@type': 'PropertyValue',

@@ -1,0 +1,75 @@
+/**
+ * AVALIAÇÕES DE CLIENTES
+ * Usadas tanto no schema LocalBusiness quanto no schema Product.
+ * Mantidas em um único lugar para consistência entre as páginas.
+ */
+
+export interface Review {
+  '@type': 'Review';
+  author: {
+    '@type': 'Person';
+    name: string;
+  };
+  reviewRating: {
+    '@type': 'Rating';
+    ratingValue: string;
+    bestRating: string;
+  };
+  reviewBody: string;
+  datePublished: string;
+}
+
+export const CUSTOMER_REVIEWS: Review[] = [
+  {
+    '@type': 'Review',
+    author: {
+      '@type': 'Person',
+      name: 'Maria Aparecida',
+    },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: '5',
+      bestRating: '5',
+    },
+    reviewBody:
+      'Alugamos o pula-pula e o escorregador para o aniversário de 5 anos da nossa filha. As crianças não pararam de brincar! A entrega foi pontual e a montagem super rápida. Recomendo demais!',
+    datePublished: '2024-03-15',
+  },
+  {
+    '@type': 'Review',
+    author: {
+      '@type': 'Person',
+      name: 'João Carlos',
+    },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: '5',
+      bestRating: '5',
+    },
+    reviewBody:
+      'A piscina de bolinhas foi um sucesso na festa do meu filho de 2 anos! Fiquei impressionado com a limpeza dos brinquedos e a educação da equipe. Já estou planejando a próxima festa!',
+    datePublished: '2024-06-22',
+  },
+  {
+    '@type': 'Review',
+    author: {
+      '@type': 'Person',
+      name: 'Patrícia Ferreira',
+    },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: '5',
+      bestRating: '5',
+    },
+    reviewBody:
+      'Organizamos um evento corporativo com brinquedos para as crianças dos colaboradores. O futebol de sabão e a cama elástica foram os grandes destaques. Empresa super profissional!',
+    datePublished: '2024-09-10',
+  },
+];
+
+export const AGGREGATE_RATING = {
+  '@type': 'AggregateRating',
+  ratingValue: '5',
+  bestRating: '5',
+  reviewCount: String(CUSTOMER_REVIEWS.length),
+} as const;
