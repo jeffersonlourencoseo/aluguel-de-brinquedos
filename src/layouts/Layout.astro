@@ -30,16 +30,6 @@ const currentPath = Astro.url.pathname;
   />
   <SchemaLocalBusiness />
   <slot name="head" />
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3C9CM6H5DH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-3C9CM6H5DH');
-  </script>
 </head>
 <body class="font-sans text-text-main antialiased bg-white">
 
@@ -166,6 +156,57 @@ const currentPath = Astro.url.pathname;
   <!-- Botao Flutuante WhatsApp -->
   <WhatsAppBtn />
 
+  <!-- Google tag (gtag.js) — carregamento lazy por interacao ou fallback longo para nao bloquear LCP/FCP -->
+  <script is:inline>
+    (function() {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-3C9CM6H5DH');
+
+      var loaded = false;
+      function loadGtag() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3C9CM6H5DH';
+        s.async = true;
+        s.fetchPriority = 'low';
+        document.body.appendChild(s);
+      }
+
+      function removeListeners() {
+        window.removeEventListener('scroll', onInteraction, { passive: true });
+        window.removeEventListener('click', onInteraction);
+        window.removeEventListener('keydown', onInteraction);
+        window.removeEventListener('mousemove', onInteraction);
+        window.removeEventListener('touchstart', onInteraction, { passive: true });
+      }
+
+      function onInteraction() {
+        removeListeners();
+        loadGtag();
+      }
+
+      window.addEventListener('scroll', onInteraction, { passive: true });
+      window.addEventListener('click', onInteraction);
+      window.addEventListener('keydown', onInteraction);
+      window.addEventListener('mousemove', onInteraction);
+      window.addEventListener('touchstart', onInteraction, { passive: true });
+
+      // Fallback: carrega depois de 8s mesmo sem interacao para nao perder pageviews
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          if (!loaded) {
+            removeListeners();
+            loadGtag();
+          }
+        }, 8000);
+      });
+    })();
+  </script>
+
   <script is:inline>
     // Scroll reveal animation
     (function() {
@@ -227,7 +268,7 @@ const currentPath = Astro.url.pathname;
         }
         menu.setAttribute('aria-hidden', 'false');
         btn.setAttribute('aria-expanded', 'true');
-        document.body.style.overflow = 'hidden';
+        document.body.classList.add('overflow-hidden');
         if (iconOpen) iconOpen.classList.add('hidden');
         if (iconClose) iconClose.classList.remove('hidden');
       }
@@ -241,7 +282,7 @@ const currentPath = Astro.url.pathname;
         menu.setAttribute('aria-hidden', 'true');
         menu.setAttribute('inert', '');
         btn.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
+        document.body.classList.remove('overflow-hidden');
         if (iconOpen) iconOpen.classList.remove('hidden');
         if (iconClose) iconClose.classList.add('hidden');
         setTimeout(function() {
